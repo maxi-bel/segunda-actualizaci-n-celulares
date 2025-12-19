@@ -615,49 +615,25 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .carousel-container { height: 350px; } }
 
 /* ubicacion */
-
-.main 
-{
-  height: 100dvh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
+.tilt-img {
+  width: 600px;
+  height: auto;
+  margin-top: 20px;
+  perspective: 1000px;
 }
-
-section 
-{
-  transform-style: preserve-3d;
-  position: relative;
-  height: 30dvh;
-  display: flex;
-  color: #FFF;
+.tilt-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+ transform: rotateX(15deg) rotateY(-5deg) rotateZ(1deg);
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+  transition: 2s;
 }
-
-section h1
-{
-  text-align: left;
-    font-size: 2rem;
-  font-family: sans-serif;
+.tilt-img:hover img{
+  transform: none;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
 }
-
-.no-parallax 
-  
-{ opacity: .2; 
-  background-color: #5333ed;
-  z-index: 999;
-}
-
-.no-parallax:first-child{
-    height:2% ;
-}
-.parallax h1 
-{
-  width: 60%;
-  font-size: 2rem;
-}
-
-
-
 
 /* desplazamiento */
 
@@ -669,5 +645,6 @@ section h1
 
 footer { position: relative; z-index: 10; } 
 .instructions { font-size: 0.8rem; color: var(--text-secondary); opacity: 0.7; } 
+
 
 
