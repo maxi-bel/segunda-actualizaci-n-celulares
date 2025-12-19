@@ -92,7 +92,7 @@ body{
 
 .sidebar{
     background-color: var(--sidebar-color);
-    height: 189dvh;
+    height: 144dvh;
     width: clamp(220px, 10dvw, 300px);
     font-size: clamp(1rem, 2.2vw, 3rem);
     display: flex;
@@ -595,10 +595,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .control-btn { background: rgba(20, 20, 40, 0.7); border: 1px solid var(--primary); color: var(--text-primary); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: all 0.3s ease; box-shadow: var(--glow-primary); } 
 .control-btn:hover { background: rgba(30, 30, 60, 0.9); transform: scale(1.1); } 
 
-/* Footer */
 
-footer { position: relative; z-index: 10; } 
-.instructions { font-size: 0.8rem; color: var(--text-secondary); opacity: 0.7; } 
 
 /* Animations */
 
@@ -621,7 +618,7 @@ footer { position: relative; z-index: 10; }
 
 .main 
 {
-  height: 100vh;
+  height: 100dvh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
@@ -631,10 +628,8 @@ section
 {
   transform-style: preserve-3d;
   position: relative;
-  height: 100vh;
+  height: 30dvh;
   display: flex;
-
-
   color: #FFF;
 }
 
@@ -646,11 +641,15 @@ section h1
 }
 
 .no-parallax 
-{
+  
+{ opacity: .2; 
   background-color: #5333ed;
   z-index: 999;
 }
 
+.no-parallax:first-child{
+    height:2% ;
+}
 .parallax h1 
 {
   width: 60%;
@@ -692,20 +691,27 @@ section h1
 /* desplazamiento */
 
 .lorem{
-    gap: 5px;
-    display: flex;
-    width: max-content;
-    animation-name: scroll;
-    animation-duration: 10s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-    /* con esto 1 la animacion queda en donde finaliza y se pasa por los 3 estados */
-    animation-iteration-count: infinite;
-    /* cantidad de veces que hace la animaciòn */
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-    /* se piede hacer liniar o cubic, es para determinar la velocida */
-    animation-direction: reverse;
 
+display: inline;
+
+width: max-content;
+
+animation-name: scroll;
+
+animation-duration: 5s;
+
+animation-delay: 1s;
+
+animation-fill-mode: both;
+    /* con esto 1 la animacion queda en donde finaliza y se pasa por los 3 estados */
+
+animation-iteration-count: infinite;
+    /* cantidad de veces que hace la animaciòn */
+
+animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* se piede hacer liniar o cubic, es para determinar la velocida */
+
+animation-direction: alternate-reverse;
 }
 
 .lorem:hover{
@@ -722,4 +728,11 @@ section h1
         transform: translatex(100%);
     }
     
+
 }
+
+
+/* Footer */
+
+footer { position: relative; z-index: 10; } 
+.instructions { font-size: 0.8rem; color: var(--text-secondary); opacity: 0.7; } 
