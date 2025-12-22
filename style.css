@@ -651,6 +651,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
   font-weight: 6;
   color: rgb(12 12 12 / 92%);
   text-transform: uppercase;
+animation: scroll 15s linear infinite; 
 }
 button{
   font-size: 1.1rem;
@@ -662,14 +663,23 @@ button{
 }
 /* desplazamiento */
 
+@keyframes scroll {
+    from{
+        transform: translateX(-50px);;
+    }
+    to{
+        transform: translateX(0px);;
+    }
+}
 
 
 
 
 /* Footer */
 
-footer { position: relative; z-index: 10; } 
+footer {  } 
   
+
 
 
 
