@@ -616,8 +616,9 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 /* ubicacion */
 .box {
-  position: relative;
-    top: 3.8vh;
+  position: absolute;
+    top: 150.9dvh;
+    left:8dvw;
   border-radius: 20px;
   transform-style: preserve-3d;
 }
@@ -632,7 +633,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
   border-radius: 25px;
   box-shadow: 0 25px 45px rgba(0,0,0,0.05);
 }
-.elements{
+.elements-ubicacion{
   position: absolute;
   top: 200dvh;
   left: 50px;
@@ -642,17 +643,19 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
   background: transparent;
   transform: translateZ(80px);
 }
-.elements h2{
-    position: relative;
+.elements-ubicacion h2{
+    position: absolute;
     display: inline;
     text-wrap: nowrap;
-    top: -210dvh;
+    top: -200dvh;
   font-size: 1.5rem;
   font-weight: 6;
   color: rgb(12 12 12 / 92%);
   text-transform: uppercase;
-animation: scroll 15s linear infinite; 
+animation: scroll 5s linear alternate infinite;
+    overflow-x:hidden ;
 }
+
 button{
   font-size: 1.1rem;
     position:absolute ;
@@ -665,10 +668,10 @@ button{
 
 @keyframes scroll {
     from{
-        transform: translateX(-50px);;
+        transform: translateX(10px);;
     }
     to{
-        transform: translateX(0px);;
+        transform: translateX(-1000px);;
     }
 }
 
@@ -679,6 +682,7 @@ button{
 
 footer {  } 
   
+
 
 
 
