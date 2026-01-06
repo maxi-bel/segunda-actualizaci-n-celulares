@@ -1,5 +1,4 @@
-/* *{ box-sizing: border-box;} */
-/* *{ box-sizing: border-box;} */
+
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -323,11 +322,11 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
     .contendor{
     
-    height: 80vh;
+    height: 80dvh;
     
     display: grid;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     font-family: sans-serif;
     overflow: visible;
     }
@@ -625,13 +624,13 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .box {
     display: flex;
-    justify-content: center;
+    width: 100dvw;
     align-items: center;
-    min-height: 100vh;
+    min-height: 45dvh;
     background: radial-gradient(#480d35, #17151d);
     position: absolute;
     top: 151dvh;
-    left:18.6dvw;
+    
     border-radius: 20px;
     z-index: 1;
     transform-style: preserve-3d;
@@ -640,10 +639,9 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .card {
     position: absolute;
     top: -.05dvh;
-    left:-0.5dvw;
     background: rgba(255, 255, 255, 0.07);
-    width: 82.5dvw;
-    min-height: 50dvw;
+    width: 100dvw;
+    height: 35dvw;
     opacity:0;
     backdrop-filter: blur(10px);
     border: 0.5px solid rgba(255, 255, 255, 0.15);
@@ -656,10 +654,10 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 }
 
 .foto-local{
-    
+    border-radius: 5px;
     display:flex;
-    min-width:80dvw ;
-    max-height:40dvh ;
+    min-width:100dvw;
+    max-height:65dvh ;
     margin-left: 0dvh;
     
 }
@@ -680,25 +678,41 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     top: -200dvh;
   font-size: 1.5rem;
   font-weight: 6;
-  color: rgb(12 12 12 / 92%);
+  color: rgba(250, 244, 244, 0.92);
   text-transform: uppercase;
 animation: scroll 5s linear alternate infinite;
     overflow-x:hidden ;
 }
 
-.button{
-    font-size: 2rem;
-    letter-spacing: 1mm;
-    border-radius: 20px;
-    display: inline;
-    position:absolute ;
-    color: #201f21;
-    text-wrap: nowrap;
-    top: -170dvh;
-    left: 30dvw;
 
-    box-shadow: 2px 0px 5px #91909c;
+.boton {
+    text-wrap: nowrap; 
+    top: -170dvh; 
+    left: 30dvw;  box-shadow: 2px 0px 5px #91909c;
+    position: relative;
+    background: rgb(57, 39, 134);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
 }
+.text {
+    display: block;
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #b393d3;
+    transform: translateY(-6px);
+    transition: transform ease 0.1s;
+
+}
+ 
+.boton:active{
+    transform: translateY(2px);
+}
+
 
 
 .box:has(.card:hover) .button {
