@@ -1,4 +1,4 @@
-
+/* *{ box-sizing: border-box;} */
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -322,11 +322,11 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
     .contendor{
     
-    height: 80dvh;
+    height: 80vh;
     
     display: grid;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     font-family: sans-serif;
     overflow: visible;
     }
@@ -624,13 +624,13 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .box {
     display: flex;
-    width: 100dvw;
+    justify-content: center;
     align-items: center;
-    min-height: 45dvh;
+    min-height: 100vh;
     background: radial-gradient(#480d35, #17151d);
     position: absolute;
     top: 151dvh;
-    
+    left:18.6dvw;
     border-radius: 20px;
     z-index: 1;
     transform-style: preserve-3d;
@@ -639,9 +639,10 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .card {
     position: absolute;
     top: -.05dvh;
+    left:-0.5dvw;
     background: rgba(255, 255, 255, 0.07);
-    width: 100dvw;
-    height: 35dvw;
+    width: 82.5dvw;
+    min-height: 50dvw;
     opacity:0;
     backdrop-filter: blur(10px);
     border: 0.5px solid rgba(255, 255, 255, 0.15);
@@ -654,10 +655,10 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 }
 
 .foto-local{
-    border-radius: 5px;
+    
     display:flex;
-    min-width:100dvw;
-    max-height:65dvh ;
+    min-width:80dvw ;
+    max-height:40dvh ;
     margin-left: 0dvh;
     
 }
@@ -678,41 +679,26 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     top: -200dvh;
   font-size: 1.5rem;
   font-weight: 6;
-  color: rgba(250, 244, 244, 0.92);
+  color: rgba(250, 247, 247, 0.92);
+  text-shadow: 2px 2px 0px #444;
   text-transform: uppercase;
 animation: scroll 5s linear alternate infinite;
     overflow-x:hidden ;
 }
 
+.button{
+    font-size: 2rem;
+    letter-spacing: 1mm;
+    border-radius: 20px;
+    display: inline;
+    position:absolute ;
+    color: #201f21;
+    text-wrap: nowrap;
+    top: -170dvh;
+    left: 30dvw;
 
-.boton {
-    text-wrap: nowrap; 
-    top: -170dvh; 
-    left: 30dvw;  box-shadow: 2px 0px 5px #91909c;
-    position: relative;
-    background: rgb(57, 39, 134);
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
+    box-shadow: 2px 0px 5px #91909c;
 }
-.text {
-    display: block;
-    padding: 10px 40px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background: transparent;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #b393d3;
-    transform: translateY(-6px);
-    transition: transform ease 0.1s;
-
-}
- 
-.boton:active{
-    transform: translateY(2px);
-}
-
 
 
 .box:has(.card:hover) .button {
@@ -735,6 +721,227 @@ animation: scroll 5s linear alternate infinite;
 }
 
 
+@media (max-width: 740px) {
+    :root {
+        --card-width: 250px;
+        --card-height: 350px;
+        --carousel-radius: 300px;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .carousel-container {
+        height: 400px;
+    }
+    .memory-card h3 {
+        font-size: 1.2rem;
+    }
+    .memory-image {
+        height: 120px;
+    }
+    /* Ajustes adicionales para móviles: reducir sidebar y menú */
+    .sidebar {
+        width: clamp(180px, 15dvw, 250px); /* Más estrecha */
+        font-size: clamp(0.8rem, 1.8vw, 2rem);
+    }
+    #menu_compra {
+        width: 85dvw; /* Más ancho para ocupar pantalla */
+        left: 40px;
+    }
+    .box {
+        width: 85dvw;
+        left: 15dvw;
+    }
+    .card {
+        width: 85dvw;
+    }
+    .elements-ubicacion {
+        width: 150px; /* Más estrecha */
+        left: 20px;
+    }
+    .elements-ubicacion h2 {
+        font-size: 1.2rem; /* Fuente más pequeña */
+    }
+    .button {
+        font-size: 1.5rem; /* Fuente más pequeña */
+        left: 20dvw;
+    }
+}
+
+/* Media query para móviles pequeños (nueva, para < 576px) */
+@media (max-width: 576px) {
+    :root {
+        --card-width: 200px; /* Más pequeñas las tarjetas */
+        --card-height: 280px;
+        --carousel-radius: 200px;
+    }
+    .title {
+        font-size: 1.3rem; /* Fuente aún más pequeña */
+    }
+    .carousel-container {
+        height: 300px; /* Altura reducida */
+    }
+    .memory-card h3 {
+        font-size: 1rem;
+    }
+    .memory-image {
+        height: 100px;
+    }
+    /* Sidebar: colapsar por defecto en móviles para ahorrar espacio */
+    .sidebar {
+        width: 60px; /* Muy estrecha, como si estuviera "cerrada" */
+        font-size: 0.8rem;
+    }
+    .sidebar:has(input[type="checkbox"]:checked) {
+        width: 60px; /* Mantener cerrada */
+    }
+    .sidebar-nav a,
+    .sidebar-item span,
+    .imagen-frente {
+        display: none; /* Ocultar texto e imágenes para simplificar */
+    }
+    /* Menú de compra: ocupar casi toda la pantalla */
+    #menu_compra {
+        width: 90dvw;
+        left: 20px;
+        height: 90dvh; /* Altura ajustada */
+        top: 10px;
+    }
+    .contendor {
+        width: 95dvw;
+        left: 10px;
+        height: 75dvh;
+    }
+    .scroll-list__wrp {
+        width: 95dvw;
+        margin-left: 10px;
+        height: 40dvh; /* Scroll más corto */
+    }
+    .scroll-list__item {
+        height: 70dvh; /* Items más pequeños */
+    }
+    /* Ubicación: simplificar y centrar */
+    .box {
+        width: 100dvw;
+        left: 5dvw;
+        top: 140dvh; /* Ajustar posición para no superponerse */
+        flex-direction: column; /* Cambiar a columna para móviles */
+        align-items: stretch;
+    }
+    .card {
+        width: 100dvw;
+        min-height: 40dvw; /* Más pequeña */
+        position: relative; /* Cambiar a relative para mejor flujo */
+        top: 0;
+    }
+    .foto-local {
+        min-width: 90dvw;
+        max-height: 30dvh;
+    }
+    .elements-ubicacion {
+        position: relative; /* Cambiar a relative */
+        top: 0;
+        left: 0;
+        width: 100dvw; /* Ocupar ancho completo */
+        text-align: center; /* Centrar */
+    }
+    .elements-ubicacion h2 {
+        position: static; /* Remover absoluto para flujo normal */
+        font-size: 1rem;
+        text-wrap: wrap; /* Permitir wrap */
+        animation: none; /* Desactivar animación para evitar problemas */
+    }
+    .button {
+        position: static; /* Flujo normal */
+        font-size: 1.2rem;
+        display: block; /* Bloque para centrar */
+        margin: 10px auto; /* Centrar */
+        left: auto;
+        top: auto;
+    }
+    /* Interacciones táctiles: usar :active en lugar de :hover para compatibilidad */
+    .box:has(.card:active) .button,
+    .box:has(.button:active) .card {
+        display: block; /* Mostrar en toque */
+    }
+    .button:active ~ .card {
+        display: block;
+    }
+    .card:active {
+        opacity: 1; /* Asegurar visibilidad en toque */
+    }
+    /* Ajustes para accesorios */
+    .accesorios {
+        width: 95dvw;
+        left: 10px;
+        height: 50dvh;
+    }
+    article {
+        width: 250px; /* Más estrecho */
+    }
+    article img:first-child {
+        width: 80%;
+        height: 40%;
+    }
+    article p {
+        width: 200px; /* Ajustar texto */
+        left: 50%;
+    }
+}
+
+/* Media query adicional para móviles muy pequeños (< 480px) - nueva */
+@media (max-width: 480px) {
+    :root {
+        --card-width: 180px;
+        --card-height: 250px;
+        --carousel-radius: 180px;
+    }
+    .title {
+        font-size: 1.1rem;
+    }
+    .carousel-container {
+        height: 250px;
+    }
+    .memory-card h3 {
+        font-size: 0.9rem;
+    }
+    .memory-image {
+        height: 80px;
+    }
+    /* Sidebar completamente oculta o mínima */
+    .sidebar {
+        width: 50px;
+    }
+    #menu_compra {
+        width: 95dvw;
+        left: 10px;
+    }
+    .box {
+        width: 98dvw;
+        left: 1dvw;
+    }
+    .card {
+        width: 98dvw;
+    }
+    .elements-ubicacion h2 {
+        font-size: 0.9rem;
+        overflow-x: hidden;
+    }
+    .button {
+        font-size: 1rem;
+    }
+    /* Desactivar animaciones complejas para mejor rendimiento */
+    .imagen-frente:hover,
+    article:hover {
+        transform: none; /* Sin transform para evitar lag en móviles */
+    }
+    .card:hover {
+        opacity: 1; /* Mantener visibilidad, pero sin hover */
+    }
+}
+/* Footer */
+
 
 
 /* Footer */
+
