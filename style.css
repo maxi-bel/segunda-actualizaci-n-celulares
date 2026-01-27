@@ -641,7 +641,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     top: -.05dvh;
     /* left:-0dvw; */
     background: rgba(255, 255, 255, 0.07);
-    width: 1350px;
+    width: 100dvw;
     height: 23dvw;
     /* opacity:0; */
     backdrop-filter: blur(10px);
@@ -657,7 +657,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .foto-local{
     
     display:flex;
-    width:1350px ;
+    width:95dvw ;
     max-height:48dvh ;
     margin-left: 0dvh;
     position: absolute;
@@ -942,13 +942,6 @@ animation: scroll 5s linear alternate infinite;
     }
 }
 /* Footer */
-
-
-
-
-
-
-
 
 
 
