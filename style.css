@@ -932,8 +932,9 @@ animation: scroll 5s linear alternate infinite;
     .card:hover {
         opacity: 1; /* Mantener visibilidad, pero sin hover */
     }
-}
+
 /* Footer */
+
 
 
 
