@@ -622,7 +622,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 @media (max-width: 480px) {
     :root {
         --card-width: 160px;
-        --card-height: 22px;
+        --card-height: 28px;
         --carousel-radius: 180px;
     }
 /* ubicacion */
@@ -939,6 +939,7 @@ animation: scroll 5s linear alternate infinite;
     }
 
 /* Footer */
+
 
 
 
