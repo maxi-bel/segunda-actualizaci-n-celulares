@@ -892,12 +892,7 @@ animation: scroll 5s linear alternate infinite;
 }
 
 /* Media query adicional para móviles muy pequeños (< 480px) - nueva */
-@media (max-width: 480px) {
-    :root {
-        --card-width: 180px;
-        --card-height: 250px;
-        --carousel-radius: 180px;
-    }
+
     .title {
         font-size: 1.1rem;
     }
@@ -932,16 +927,14 @@ animation: scroll 5s linear alternate infinite;
     .button {
         font-size: 1rem;
     }
-    /* Desactivar animaciones complejas para mejor rendimiento */
-    .imagen-frente:hover,
-    article:hover {
-        transform: none; /* Sin transform para evitar lag en móviles */
-    }
+   
+  
     .card:hover {
         opacity: 1; /* Mantener visibilidad, pero sin hover */
     }
 }
 /* Footer */
+
 
 
 
