@@ -781,7 +781,7 @@ animation: scroll 5s linear alternate infinite;
 @media (max-width: 576px) {
     :root {
         --card-width: 200px; /* Más pequeñas las tarjetas */
-        --card-height: 280px;
+        --card-height: 390px;
         --carousel-radius: 200px;
     }
     .title {
@@ -941,6 +941,7 @@ animation: scroll 5s linear alternate infinite;
     }
 
 /* Footer */
+
 
 
 
