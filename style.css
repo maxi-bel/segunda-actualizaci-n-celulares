@@ -924,7 +924,7 @@ animation: scroll 5s linear alternate infinite;
         width: 98dvw;
         left: 1dvw;
     }
-    .card {
+    .card-ubicacion {
         width: 98dvw;
     }
     .elements-ubicacion h2 {
@@ -941,6 +941,7 @@ animation: scroll 5s linear alternate infinite;
     }
 
 /* Footer */
+
 
 
 
