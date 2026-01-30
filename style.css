@@ -780,7 +780,7 @@ animation: scroll 5s linear alternate infinite;
 /* Media query para móviles pequeños (nueva, para < 576px) */
 @media (max-width: 576px) {
     :root {
-        --card-width: 200px; /* Más pequeñas las tarjetas */
+        --card-width: 180px; /* Más pequeñas las tarjetas */
         --card-height: 240px;
         --carousel-radius: 200px;
     }
@@ -941,6 +941,7 @@ animation: scroll 5s linear alternate infinite;
     }
 
 /* Footer */
+
 
 
 
