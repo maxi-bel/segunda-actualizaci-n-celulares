@@ -30,7 +30,7 @@ body{
     --glow-accent: 0 0 10px rgba(255, 0, 229, 0.7), 0 0 20px rgba(255, 0, 229, 0.5);
     --card-width: 300px;
     --card-height: 420px;
-    --media-radius: 400px;
+    --carousel-radius: 400px;
     --transition-speed: 0.5s;
 }
 
@@ -252,7 +252,7 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
     left: 8.7dvw;
 
 }
-.sidebar:has(input[type="checkbox"]:checked) .card  {
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{
     width: 91dvw;
     
 
@@ -519,8 +519,8 @@ z-index: -2;}
     0% { background-position: 0 0, 0 0, 0 0, 0 0; } 
     100% { background-position: 200px 200px, 300px 300px, 400px 400px, 600px 600px; } 
 } 
-/* media Container */
-.media-container { 
+/* Carousel Container */
+.carousel-container { 
     position: relative; 
     width: 100%; 
     height: 780px; 
@@ -617,16 +617,11 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .memory-image { height: 120px; } } 
 @media (max-width: 576px) 
 { :root { --card-width: 220px; 
-         --card-height: 390px; 
-         --carousel-radius: 250px; } 
+    --card-height: 260px; 
+    --carousel-radius: 250px; } 
 .title { font-size: 1.5rem; } 
 .carousel-container { height: 350px; } }
-@media (max-width: 480px) {
-    :root {
-        --card-width: 160px;
-        --card-height: 17px;
-        --carousel-radius: 180px;
-    }
+
 /* ubicacion */
 
 .box {
@@ -643,21 +638,21 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     transform-style: preserve-3d;
     width: 100dvw;
 }
-.card {
+.card-ubicacion {
     position: fixed;
     top: -.05dvh;
     /* left:-0dvw; */
     background: rgba(255, 255, 255, 0.07);
     width: 100dvw;
     height: 23dvw;
-    /* opacity:0; */
+    opacity:0;
     backdrop-filter: blur(10px);
     border: 0.5px solid rgba(255, 255, 255, 0.15);
     border-radius: 25px;
     box-shadow: 0 25px 45px rgba(0,0,0,0.05);
     transition: all 1.5s linear;
 }
-.card:hover{
+.card-ubicacion:hover{
     opacity:1 ;
 }
 
@@ -710,13 +705,13 @@ animation: scroll 5s linear alternate infinite;
 }
 
 
-.box:has(.card:hover) .button {
+.box:has(.card-ubicacion:hover) .button {
 
   display: block; /* Visible cuando .card está en hover */
 }
-.box:has(.button:hover) .card {
+.box:has(.button:hover) .card-ubicacion {
     display: block; }
-    .button:hover ~ .card {
+    .button:hover ~ .card-ubicacion {
   display: block;}
 /* desplazamiento */
 
@@ -761,7 +756,7 @@ animation: scroll 5s linear alternate infinite;
         width: 85dvw;
         left: 15dvw;
     }
-    .card {
+    .card-ubicacion {
         width: 85dvw;
     }
     .elements-ubicacion {
@@ -780,8 +775,8 @@ animation: scroll 5s linear alternate infinite;
 /* Media query para móviles pequeños (nueva, para < 576px) */
 @media (max-width: 576px) {
     :root {
-        --card-width: 180px; /* Más pequeñas las tarjetas */
-        --card-height: 240px;
+        --card-width: 200px; /* Más pequeñas las tarjetas */
+        --card-height: 280px;
         --carousel-radius: 200px;
     }
     .title {
@@ -837,12 +832,7 @@ animation: scroll 5s linear alternate infinite;
         flex-direction: column; /* Cambiar a columna para móviles */
         align-items: stretch;
     }
-    .card {
-        width: 100dvw;
-        min-height: 40dvw; /* Más pequeña */
-        position: relative; /* Cambiar a relative para mejor flujo */
-        top: 0;
-    }
+
     .foto-local {
         min-width: 90dvw;
         max-height: 30dvh;
@@ -869,14 +859,14 @@ animation: scroll 5s linear alternate infinite;
         top: auto;
     }
     /* Interacciones táctiles: usar :active en lugar de :hover para compatibilidad */
-    .box:has(.card:active) .button,
-    .box:has(.button:active) .card {
+    .box:has(.card-ubicacion:active) .button,
+    .box:has(.button:active) .card-ubicacion {
         display: block; /* Mostrar en toque */
     }
-    .button:active ~ .card {
+    .button:active ~ .card-ubicacion {
         display: block;
     }
-    .card:active {
+    .card-ubicacion:active {
         opacity: 1; /* Asegurar visibilidad en toque */
     }
     /* Ajustes para accesorios */
@@ -899,7 +889,12 @@ animation: scroll 5s linear alternate infinite;
 }
 
 /* Media query adicional para móviles muy pequeños (< 480px) - nueva */
-
+@media (max-width: 480px) {
+    :root {
+        --card-width: 160px;
+        --card-height: 17px;
+        --carousel-radius: 180px;
+    }
     .title {
         font-size: 1.1rem;
     }
@@ -934,13 +929,18 @@ animation: scroll 5s linear alternate infinite;
     .button {
         font-size: 1rem;
     }
-   
-  
-    .card:hover {
-        opacity: 1; /* Mantener visibilidad, pero sin hover */
+    /* Desactivar animaciones complejas para mejor rendimiento */
+    .imagen-frente:hover,
+    article:hover {
+        transform: none; /* Sin transform para evitar lag en móviles */
     }
-
+    .card-ubicacion:hover {
+        opacity: 0; /* Mantener visibilidad, pero sin hover */
+    }
+}
 /* Footer */
+
+
 
 
 
