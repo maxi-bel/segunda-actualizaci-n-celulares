@@ -1,4 +1,4 @@
-/* *{ box-sizing: border-box;} */
+
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -252,8 +252,8 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
     left: 8.7dvw;
 
 }
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{
-    width: 91dvw;
+.sidebar:has(input[type="checkbox"]:checked) .card  {
+    width: 991dvw;
     
 
 }
@@ -609,6 +609,19 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 /* Responsive Adjustments */
 
+:root { --card-width: 250px; 
+    --card-height: 350px; 
+    --carousel-radius: 300px; } 
+.title { font-size: 1.8rem; } 
+.carousel-container { height: 400px; } 
+.memory-card h3 { font-size: 1.2rem; } 
+.memory-image { height: 120px; }
+.container-fluid{height: 30dvh;}
+#menu_compra{ height: 99dvh;
+
+}
+
+
 @media (max-width: 740px) 
 { :root { --card-width: 250px; --card-height: 350px; --carousel-radius: 300px; } 
 .title { font-size: 1.8rem; } 
@@ -859,11 +872,11 @@ animation: scroll 5s linear alternate infinite;
         top: auto;
     }
     /* Interacciones táctiles: usar :active en lugar de :hover para compatibilidad */
-    .box:has(.card-ubicacion:active) .button,
-    .box:has(.button:active) .card-ubicacion {
+    .box:has(.card:active) .button,
+    .box:has(.button:active) .card {
         display: block; /* Mostrar en toque */
     }
-    .button:active ~ .card-ubicacion {
+    .button:active ~ .card {
         display: block;
     }
     .card-ubicacion:active {
@@ -889,12 +902,18 @@ animation: scroll 5s linear alternate infinite;
 }
 
 /* Media query adicional para móviles muy pequeños (< 480px) - nueva */
+ @media (max-width: 360px){ 
+    :root{box-sizing: border-box;}
+    #menu_compra { margin-left: 20px; } 
+.material-symbols-outlined{
+    opacity:0 ;}}
 @media (max-width: 480px) {
     :root {
         --card-width: 160px;
         --card-height: 17px;
         --carousel-radius: 180px;
     }
+   
     .title {
         font-size: 1.1rem;
     }
@@ -939,6 +958,9 @@ animation: scroll 5s linear alternate infinite;
     }
 }
 /* Footer */
+
+
+
 
 
 
