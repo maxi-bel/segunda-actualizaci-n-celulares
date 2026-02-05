@@ -902,11 +902,22 @@ animation: scroll 5s linear alternate infinite;
 }
 
 /* Media query adicional para móviles muy pequeños (< 480px) - nueva */
- @media (max-width: 360px){ 
+@media (max-width: 360px){ 
+    #menu_compra{height: 65dvh;
+                top:13dvh;
+                left: 47dvw;
+                }
     :root{box-sizing: border-box;}
     #menu_compra { margin-left: 20px; } 
-.material-symbols-outlined{
-    opacity:0 ;}}
+    
+    .material-symbols-outlined{opacity:0 ;}
+    .box{height: 30dvh;
+        width: 100dvw; }
+.foto-local{margin: 1%;}
+.card-ubicacion  { height: 30dvh; width: 100dvw;}
+.elements-ubicacion{ text-wrap: nowrap;
+overflow-y: hidden;}
+}
 @media (max-width: 480px) {
     :root {
         --card-width: 160px;
@@ -958,6 +969,7 @@ animation: scroll 5s linear alternate infinite;
     }
 }
 /* Footer */
+
 
 
 
