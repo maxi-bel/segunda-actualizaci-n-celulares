@@ -751,7 +751,7 @@ animation: scroll 5s linear alternate infinite;
         font-size: clamp(0.8rem, 1.8vw, 2rem);
     }
     #menu_compra {
-        width: 85dvw; /* Más ancho para ocupar pantalla */
+        width: 75dvw; /* Más ancho para ocupar pantalla */
         left: 40px;
     }
     .box {
@@ -914,29 +914,6 @@ animation: scroll 5s linear alternate infinite;
         left: 50%;
     }
 }
-
-/* Media query adicional para móviles muy pequeños (< 480px) - nueva */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
