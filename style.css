@@ -622,22 +622,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 }
 
 
-@media (max-width: 740px) 
-{ 
-    #menu_compra{height: 90dvh;}
-    :root { --card-width: 250px; 
-    --card-height: 350px; 
-    --carousel-radius: 300px; } 
-.title { font-size: 1.8rem; } 
-.carousel-container { height: 400px; } 
-.memory-card h3 { font-size: 1.2rem; } 
-.memory-image { height: 120px; } } 
-@media (max-width: 576px) 
-{ :root { --card-width: 220px; 
-    --card-height: 260px; 
-    --carousel-radius: 250px; } 
-.title { font-size: 1.5rem; } 
-.carousel-container { height: 350px; } }
+
 
 /* ubicacion */
 
@@ -790,7 +775,7 @@ animation: scroll 5s linear alternate infinite;
 }
 
 /* Media query para móviles pequeños (nueva, para < 576px) */
-@media (max-width: 576px) {
+@media (max-width: 584px) {
     :root {
         --card-width: 200px; /* Más pequeñas las tarjetas */
         --card-height: 280px;
@@ -819,16 +804,23 @@ animation: scroll 5s linear alternate infinite;
     .sidebar-nav a,
     .sidebar-item span,
     .imagen-frente {
-        display: none; /* Ocultar texto e imágenes para simplificar */
-    }
+     display: flex;
+      /* Ocultar texto e imágenes para simplificar */
+ } 
+ .sidebar{
+    width: 20%;
+ }
+ .sidebar-item {
+    margin-left: 20%;
+ }
     /* Menú de compra: ocupar casi toda la pantalla */
     #menu_compra {
         width: 90dvw;
-        left: 20px;
+        left: 75px;
         height: 90dvh; /* Altura ajustada */
         top: 10px;
     }
-    .contendor {
+    .contenedor {
         width: 95dvw;
         left: 10px;
         height: 75dvh;
@@ -841,6 +833,24 @@ animation: scroll 5s linear alternate infinite;
     .scroll-list__item {
         height: 70dvh; /* Items más pequeños */
     }
+
+           .material-symbols-outlined{
+        opacity:0;
+        scale:1.3;
+        top:9px ;
+        margin-left: -64px;
+    } 
+    .logo, .logo-icono{
+        position:relative;
+    scale: .5;top:-40px;left: -25px; }
+    .sidebar:has(input[type="checkbox"]:checked) .logo, .logo-iconol{
+    scale: 1.5;
+    top: 16px;
+    left: 8px;}
+.sidebar:has(input[type="checkbox"]:checked).material-symbols-outlined{
+    
+    opacity: .4;
+}
     /* Ubicación: simplificar y centrar */
     .box {
         width: 100dvw;
@@ -906,8 +916,14 @@ animation: scroll 5s linear alternate infinite;
 }
 
 /* Media query adicional para móviles muy pequeños (< 480px) - nueva */
-@media (max-width: 390px){ 
-    .material-symbols-outlined{
+
+@media (max-width: 480px) {
+    :root {
+        --card-width: 160px;
+        --card-height: 17px;
+        --carousel-radius: 180px;
+    }
+       .material-symbols-outlined{
         opacity:0;
         scale:1.3;
         top:9px ;
@@ -915,28 +931,15 @@ animation: scroll 5s linear alternate infinite;
     } 
     .logo, .logo-icono{
         position:relative;
-    scale: .5;
-top:-40px;
-left: -25px; }
+    scale: .5;top:-40px;left: -25px; }
     .sidebar:has(input[type="checkbox"]:checked) .logo, .logo-iconol{
     scale: 1.5;
     top: 16px;
-    left: 8px;
-    
-}
+    left: 8px;}
 .sidebar:has(input[type="checkbox"]:checked).material-symbols-outlined{
     
     opacity: .4;
 }
-   
-}
-@media (max-width: 480px) {
-    :root {
-        --card-width: 160px;
-        --card-height: 17px;
-        --carousel-radius: 180px;
-    }
-   
     .title {
         font-size: 1.1rem;
     }
@@ -954,8 +957,8 @@ left: -25px; }
         width: 50px;
     }
     #menu_compra {
-        width: 95dvw;
-        left: 10px;
+        width: 90dvw;
+        left: 40px;
     }
     .box {
         width: 98dvw;
@@ -972,15 +975,17 @@ left: -25px; }
         font-size: 1rem;
     }
     /* Desactivar animaciones complejas para mejor rendimiento */
-    .imagen-frente:hover,
-    article:hover {
-        transform: none; /* Sin transform para evitar lag en móviles */
-    }
+
     .card-ubicacion:hover {
         opacity: 0; /* Mantener visibilidad, pero sin hover */
     }
 }
 /* Footer */
+
+
+
+
+
 
 
 
