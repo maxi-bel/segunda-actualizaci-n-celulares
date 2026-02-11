@@ -730,7 +730,7 @@ animation: scroll 5s linear alternate infinite;
 @media (max-width: 740px) {
     :root {
         --card-width: 250px;
-        --card-height: 350px;
+        --card-height: 450px;
         --carousel-radius: 300px;
     }
     .title {
@@ -778,7 +778,7 @@ animation: scroll 5s linear alternate infinite;
 @media (max-width: 584px) {
     :root {
         --card-width: 200px; /* Más pequeñas las tarjetas */
-        --card-height: 280px;
+        --card-height: 380px;
         --carousel-radius: 200px;
     }
     .title {
@@ -914,10 +914,6 @@ animation: scroll 5s linear alternate infinite;
         left: 50%;
     }
 }
-
-
-
-
 
 
 
