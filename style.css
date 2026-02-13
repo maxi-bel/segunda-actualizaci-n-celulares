@@ -607,19 +607,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 @keyframes pulse { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; } } 
 
-/* Responsive Adjustments */
 
-:root { --card-width: 250px; 
-    --card-height: 350px; 
-    --carousel-radius: 300px; } 
-.title { font-size: 1.8rem; } 
-.carousel-container { height: 400px; } 
-.memory-card h3 { font-size: 1.2rem; } 
-.memory-image { height: 120px; }
-.container-fluid{height: 30dvh;}
-#menu_compra{ height: 99dvh;
-
-}
 
 
 
@@ -714,7 +702,7 @@ animation: scroll 5s linear alternate infinite;
 .box:has(.button:hover) .card-ubicacion {
     display: block; }
     .button:hover ~ .card-ubicacion {
-  display: block;}
+    display: block;}
 /* desplazamiento */
 
 @keyframes scroll {
@@ -726,10 +714,28 @@ animation: scroll 5s linear alternate infinite;
     }
 }
 
+/* diseño responsive */
+
+@media screen and ( min-width: 600px){
 
 
+body { --card-width: 285px; 
+    --card-height: 450px; 
+    --carousel-radius: 400px; } 
+    .memory-card{
+        margin-top: -45dvh;
+       
+    }
+.title { font-size: 1.8rem; } 
+.carousel-container { height: 400px; } 
+.memory-card h3 { font-size: 1.2rem; } 
+.memory-image { height: 120px; }
+.container-fluid{height: 30dvh;}
 
-
+.card-ubicacion{
+    height: 50dvh;
+}
+}
 
 
 
