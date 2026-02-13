@@ -723,7 +723,7 @@ body { --card-width: 350px;
     --card-height: 550px; 
     --carousel-radius: 400px; } 
     .memory-card{
-        margin-top: -15dvh;
+        margin-top: -25dvh;
        
     }
     #menu_compra{ 600px;}
@@ -737,6 +737,7 @@ body { --card-width: 350px;
     height: 50dvh;
 }
 }
+
 
 
 
