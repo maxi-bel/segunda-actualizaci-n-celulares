@@ -723,7 +723,7 @@ body { --card-width: 285px;
     --card-height: 450px; 
     --carousel-radius: 400px; } 
     .memory-card{
-        margin-top: -45dvh;
+        margin-top: -5dvh;
        
     }
 .title { font-size: 1.8rem; } 
@@ -736,6 +736,7 @@ body { --card-width: 285px;
     height: 50dvh;
 }
 }
+
 
 
 
