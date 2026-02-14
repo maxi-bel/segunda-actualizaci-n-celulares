@@ -726,7 +726,7 @@ body { --card-width: 350px;
         margin-top: -25dvh;
        
     }
-    #menu_compra{ 200px;}
+    #menu_compra{ 100px;}
 .title { font-size: 1.8rem; } 
 . { height: 400px; } 
 .memory-card h3 { font-size: 1.2rem; } 
@@ -737,6 +737,7 @@ body { --card-width: 350px;
     height: 50dvh;
 }
 }
+
 
 
 
