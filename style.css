@@ -554,8 +554,9 @@ z-index: -2;}
 .card-inner { 
     position: relative; 
     width: 100%; 
-    height: 84%; 
-    top: -45dvh;
+    height: 100%;
+    top: -25px;
+    
     transform-style: preserve-3d; 
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); } 
 .memory-card:hover .card-inner { transform: translateZ(20px); } 
@@ -717,15 +718,21 @@ animation: scroll 5s linear alternate infinite;
 
 /* diseño responsive */
 
-@media screen and ( min-width: 600px){
+@media screen and (max-width: 767px)
+{
 
 
-body { --card-width: 350px; 
-    --card-height: 550px; 
-    --carousel-radius: 300px; } 
-    .memory-card{margin-top: -25dvh;}
-    #menu_compra{ height: 89dvh;}
+ 
+    .memory-card{margin-top: -25dvh}
+    #menu_compra{ height: 59dvh;}
 .title { font-size: 1.8rem; } 
+
+.card-inner { 
+    position: relative; 
+    width: 100%; 
+    height: 84%; 
+    top: 45dvh;
+}
 
 .memory-card h3 { font-size: 1.2rem; } 
 .memory-image { height: 120px; }
@@ -733,6 +740,14 @@ body { --card-width: 350px;
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
+
+
+
+
+
+
+
 
 
 
