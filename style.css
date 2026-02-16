@@ -720,7 +720,7 @@ animation: scroll 5s linear alternate infinite;
 
 @media (max-width: 768px) 
 {
-.container-fluid h-100 d-flex flex-column{
+.container-fluid {
     height: 60dvh;
 }
 
@@ -744,6 +744,7 @@ animation: scroll 5s linear alternate infinite;
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
 
 
 
