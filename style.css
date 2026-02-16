@@ -502,7 +502,7 @@ z-index: -2;}
 .cosmos-background { 
     width: 100%; 
     height: 300%; 
-    z-index: -1; /* Ajustado para estar detrás de ::before y ::after de #menu_compra */
+    z-index: -10; /* Ajustado para estar detrás de ::before y ::after de #menu_compra */
     background: radial-gradient( ellipse at bottom, #1b2735 0%, #090a0f 100% ); 
     overflow: hidden; 
 } 
@@ -722,15 +722,16 @@ animation: scroll 5s linear alternate infinite;
 {
 
 
- 
+
     .memory-card{margin-top: -25dvh}
-    #menu_compra{ height: 59dvh;}
+    #menu_compra{ height: 250px;
+    z-index: -20;}
 .title { font-size: 1.8rem; } 
 
 .card-inner { 
     position: relative; 
     width: 100%; 
-    height: 84%; 
+    height: 94%; 
     top: 45dvh;
 }
 
@@ -740,17 +741,6 @@ animation: scroll 5s linear alternate infinite;
 
 .card-ubicacion{height: 50dvh;}
                                     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
