@@ -718,7 +718,7 @@ animation: scroll 5s linear alternate infinite;
 
 /* diseño responsive */
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 700px)
 {
 
 
@@ -729,8 +729,8 @@ animation: scroll 5s linear alternate infinite;
 
 .card-inner { 
     position: relative; 
-    width: 190%; 
-    height: 200%; 
+    width: 40dvw; 
+    height: 80dvh; 
     top: 45dvh;
 }
 
@@ -742,6 +742,7 @@ animation: scroll 5s linear alternate infinite;
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
 
 
 
