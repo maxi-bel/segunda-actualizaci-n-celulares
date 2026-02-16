@@ -718,19 +718,19 @@ animation: scroll 5s linear alternate infinite;
 
 /* diseño responsive */
 
-@media screen and (max-width: 700px)
+@media (max-width: 768px) 
 {
 
 
 
     .memory-card{margin-top: -25dvh}
-
+ 
 
 
 .card-inner { 
     position: relative; 
-    width: 40dvw; 
-    height: 80dvh; 
+    width: 190%; 
+    height: 200%; 
     top: 45dvh;
 }
 
@@ -742,6 +742,11 @@ animation: scroll 5s linear alternate infinite;
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
+
+
+
+
 
 
 
