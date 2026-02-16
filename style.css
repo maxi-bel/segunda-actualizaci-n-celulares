@@ -719,28 +719,17 @@ animation: scroll 5s linear alternate infinite;
 @media screen and ( min-width: 600px){
 
 
-body { --card-width: 350px; 
-    --card-height: 550px; 
-    --carousel-radius: 400px; } 
-    .memory-card{
-        margin-top: -25dvh;
-       
-    }
-    #menu_compra{ 100px;}
+body { --card-width: 350px; --card-height: 550px; --carousel-radius: 400px; } 
+    .memory-card{margin-top: -25dvh;}
+    #menu_compra{ height: 100px;}
 .title { font-size: 1.8rem; } 
-. { height: 400px; } 
+
 .memory-card h3 { font-size: 1.2rem; } 
 .memory-image { height: 120px; }
 .container-fluid{height: 30dvh;}
 
-.card-ubicacion{
-    height: 50dvh;
-}
-}
-
-
-
-
+.card-ubicacion{height: 50dvh;}
+                                    }
 
 
 
