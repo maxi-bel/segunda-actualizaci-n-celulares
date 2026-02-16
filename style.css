@@ -723,16 +723,6 @@ animation: scroll 5s linear alternate infinite;
 
 
 
-    .memory-card{margin-top: -25dvh}
-    #menu_compra{ height: 80dvh;}
- 
-
-.card-inner { 
-    position: relative; 
-    width: 110%; 
-    height: 105%; 
-    top: 45dvh;
-}
 
 .memory-card h3 { font-size: 1.2rem; } 
 .memory-image { height: 120px; }
@@ -740,6 +730,7 @@ animation: scroll 5s linear alternate infinite;
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
 
 
 
