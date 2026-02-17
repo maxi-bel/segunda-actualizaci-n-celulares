@@ -718,11 +718,10 @@ animation: scroll 5s linear alternate infinite;
 }
 
 /* diseño responsive */
-
 @media (max-width: 768px) 
 {
 #menu_compra{
-    height: 71dvh;
+    height: 65dvh;
 }
 .cosmos-background{
     margin: 5%;
@@ -736,7 +735,7 @@ animation: scroll 5s linear alternate infinite;
 .card-inner { 
     position: relative; 
     width: 90%; 
-    height: 120%; 
+    height: 90%; 
     top: -25dvh;
 }
 
@@ -744,6 +743,8 @@ animation: scroll 5s linear alternate infinite;
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
+
 
 
 
