@@ -745,10 +745,14 @@ animation: scroll 5s linear alternate infinite;
     top: -55px; 
 }
 
-
+.container-fluid h-100 d-flex flex-column{
+position: relative;
+top: -25px;
+}
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
 
 
 
