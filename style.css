@@ -728,15 +728,15 @@ animation: scroll 5s linear alternate infinite;
 }
 
 
-    .memory-card{margin-top: -15dvh}
+    .memory-card{margin-top: -25dvh}
  
 
 
 .card-inner .carousel-container{ 
     position: relative; 
     width: 90%; 
-    height: 90%; 
-    top: -25dvh;
+    height: 80%; 
+    top: -55dvh;
 }
 
 
@@ -744,6 +744,7 @@ animation: scroll 5s linear alternate infinite;
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
 
 
 
