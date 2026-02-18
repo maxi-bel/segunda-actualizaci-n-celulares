@@ -736,9 +736,11 @@ animation: scroll 5s linear alternate infinite;
     position:absolute; 
     width: 110%; 
     height: 70%; 
-    top: -155px;
+    top: -25dvh;
     margin-bottom: 15px;
 }
+
+
 .carousel-container{
    position: relative; 
     width: 100%; 
@@ -755,6 +757,7 @@ top: -25px;
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
 
 
 
