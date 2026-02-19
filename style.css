@@ -718,58 +718,31 @@ animation: scroll 5s linear alternate infinite;
 }
 
 /* diseño responsive */
-@media (max-width: 600px) 
+@media (max-width: 768px) 
 {
-
-        :root {
-        --card-width: 200px; 
+#menu_compra{
+    height: 92dvh;
+}
+.cosmos-background{
+    margin: 5%;
+}
+    :root {
+        --card-width: 250px; /* Más pequeñas las tarjetas */
         --card-height: 380px;
         --carousel-radius: 200px;
-            
     }
 
     .carousel-container {
-        height: 300px; /* Altura reducida */
+        height: 100px; /* Altura reducida */
     }
-#menu_compra{
-    height: 65px;
-}
-.cosmos-background{
-    margin: 5px;
-}
-
-
-    .memory-card{margin-top: -25px}
+    .memory-card{margin-top: -35dvh}
  
 
 
-.card-inner { 
-    position:absolute; 
-    width: 110%; 
+.card-inner .carousel-container{ 
+    position: absolute; 
+    width: 90%; 
     height: 70%; 
-    top: -25dvh;
+    top: -65dvh;
     margin-bottom: 15px;
 }
-
-
-
-
-
-.card-ubicacion{height: 50dvh;}
-                                    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
