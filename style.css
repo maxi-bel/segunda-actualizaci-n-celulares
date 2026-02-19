@@ -740,9 +740,6 @@ animation: scroll 5s linear alternate infinite;
 
 
 .card-inner .carousel-container{ 
-    position: absolute; 
-    width: 90%; 
-    height: 70%; 
-    top: -65dvh;
-    margin-bottom: 15px;
+    justify-content: flex-start;
 }
+
