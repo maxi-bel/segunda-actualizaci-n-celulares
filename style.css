@@ -744,5 +744,6 @@ animation: scroll 5s linear alternate infinite;
 .card-inner .carousel-container{ 
     justify-content: flex-start;
 }
+}
 
 
