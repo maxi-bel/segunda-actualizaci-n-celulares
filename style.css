@@ -720,6 +720,17 @@ animation: scroll 5s linear alternate infinite;
 /* diseño responsive */
 @media (max-width: 600px) 
 {
+
+        :root {
+        --card-width: 200px; 
+        --card-height: 380px;
+        --carousel-radius: 200px;
+            
+    }
+
+    .carousel-container {
+        height: 300px; /* Altura reducida */
+    }
 #menu_compra{
     height: 65px;
 }
@@ -746,6 +757,7 @@ animation: scroll 5s linear alternate infinite;
 
 .card-ubicacion{height: 50dvh;}
                                     }
+
 
 
 
