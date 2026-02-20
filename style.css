@@ -1,4 +1,4 @@
-
+lo
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -722,7 +722,7 @@ animation: scroll 5s linear alternate infinite;
 {
 #menu_compra{
     height: 92dvh;
-    width: 400px;
+    width: 500px;
 }
 .cosmos-background{
     margin: 1%;
@@ -750,6 +750,7 @@ animation: scroll 5s linear alternate infinite;
 .card-ubicacion{ height: 50dvh;
                width:100dvw;}
 }
+
 
 
 
