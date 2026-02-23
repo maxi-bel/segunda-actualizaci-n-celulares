@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="celular.png" type="image/png">  
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -337,8 +338,8 @@ Android 8.0 Oreo + MIUI 9.5</li>
 <!-- menu accesorios -->
 
 
-    <div class="contenedor">
-<div class="scroll-list__wrp" id="scrollList">
+    <div id="accesorios" class="contenedor_accesorios">
+<div  class="scroll-list__wrp" id="scrollList">
     <div class="scroll-list__item">
         <article>
         <img src="1.jpeg"> <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, harum.</p>
@@ -586,6 +587,16 @@ Android 8.0 Oreo + MIUI 9.5</li>
     });
     
                                     </script>
+                                    <!-- Desplazamiento suave al hacer clic en "Local" -->
+                                    <script>
+                                        
+document.querySelector('.local-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#box-ubicacion').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+                                    </SCRipt>
                                 </div> </div>
                         </div>
 
@@ -593,6 +604,7 @@ Android 8.0 Oreo + MIUI 9.5</li>
 
 
         </div>
+
         <label class="material-symbols-outlined open-button" for="open-menu" >double_arrow</label>
         
         <label class="material-symbols-outlined" for="open-menu">Arrow_Circle_left</label>
@@ -609,20 +621,22 @@ Android 8.0 Oreo + MIUI 9.5</li>
             <ul>
                 <li class="sidebar-item ">
                     <span class="material-symbols-outlined" >Notifications</span>
-                    <a href="#">ACCESORIOS</a>
+                    <a href="#box-accesorios" class="local-link">ACCESORIOS</a>
                 </li>
                 <li class="sidebar-item">
                     <span class="material-symbols-outlined" >mark_email_unread</span>
-                    <a href="#">tELEFONOS</a>
+                    <a href="#">TELEFONOS DESTACADOS</a>
                 </li>
                 <li class="sidebar-item">
-                    <span class="material-symbols-outlined" >shopping_cart</span>
+                    <span  class="material-symbols-outlined" >shopping_cart</span>
                     <a href="#">Compras</a>
                 </li>
                 <li class="sidebar-item">
-                    <span class="material-symbols-outlined" class="ubicacion" scr="ubicacion.png" >Local</span>
-                    <a href="#"></a>
+                    <a href="#box-ubicacion" class="local-link">
+                        <span class="material-symbols-outlined" class="ubicacion">Local</span>
+                    </a>
                 </li>
+
             </ul>
         </nav>
         <div class="sidebar-profile ">
@@ -639,12 +653,12 @@ Android 8.0 Oreo + MIUI 9.5</li>
 </div>
         
     <!-- ubicacion -->
-        <div class="box">
+        <div class="box" id="box-ubicacion">
             <img class="foto-local" src="local de muestra.jpg" alt="Imagen del local"> 
      <div class="elements-ubicacion">
-    
+     
      <h2>Retira tu pedido en nuestra sucursal de Carlos Paz o consulta por envios en Còrdoba con cargo  </h2>
-         <a href="https://www.google.com/maps/place/Celulares+Vcp/@-31.4189334,-64.4907794,669m/data=!3m2!1e3!4b1!4m6!3m5!1s0x942d6660b002b767:0xb4828a119db6608b!8m2!3d-31.4189334!4d-64.4907794!16s%2Fg%2F11d_ynsvky!17m2!4m1!1e3!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D"  target="_blank"><button class="button" >Nuestro local</button></a>
+         <a href="https://maps.app.goo.gl/u2Crwfp83h1UFnqW8" href="#local"  target="_blank"><button class="button" >Como llegar</button></a>
       
      </div> 
      <div class="card-ubicacion"> 
@@ -655,6 +669,23 @@ Android 8.0 Oreo + MIUI 9.5</li>
     
 
 </aside>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
 
 
 
