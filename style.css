@@ -1,3 +1,4 @@
+
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -100,6 +101,7 @@ body{
     position:relative;
     top: 10px;
     padding: 30px 0 30px 6px;
+    box-shadow: 4px 5px 0px rgb(91, 66, 230);
     border-radius: 20px;
     z-index: 1; /* Agregado para asegurar que la sidebar esté encima de #menu_compra */
 }
@@ -189,11 +191,13 @@ input[type="checkbox"]{
 }
 .sidebar label{
     position:relative ;
-    background-color: rgb(211, 224, 226);
-    color: #837e94;
+    background-image: var(--sidebar-color) ;
+    
+    color: var(--card-bg);
     font-size: 2rem;
     border-radius: 50%;
-    left: 5px;
+
+    left: -15px;
     padding: .4rem;
 }
 
@@ -302,11 +306,8 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 }
 
 
-/* .sidebar:has(input[type="checkbox"]:checked) .contendor_accesorios{ */
-    /* width: 90dvw; */
-    /* left: 78px; */
-    /* height: 95dvh; */
-/* } */
+
+
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp{
     margin-left: 78px;
     width: 90.4dvw;
@@ -752,3 +753,25 @@ animation: scroll 5s linear alternate infinite;
 .scroll-list__wrp{ width: 60.9dvw;}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
