@@ -338,7 +338,7 @@ Android 8.0 Oreo + MIUI 9.5</li>
 <!-- menu accesorios -->
 
 
-    <div id="accesorios" class="contenedor_accesorios">
+    <div class="contenedor_accesorios">
 <div  class="scroll-list__wrp" id="scrollList">
     <div class="scroll-list__item">
         <article>
@@ -587,16 +587,8 @@ Android 8.0 Oreo + MIUI 9.5</li>
     });
     
                                     </script>
-                                    <!-- Desplazamiento suave al hacer clic en "Local" -->
-                                    <script>
-                                        
-document.querySelector('.local-link').addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector('#box-ubicacion').scrollIntoView({
-        behavior: 'smooth'
-    });
-});
-                                    </SCRipt>
+
+
                                 </div> </div>
                         </div>
 
@@ -621,11 +613,11 @@ document.querySelector('.local-link').addEventListener('click', function(e) {
             <ul>
                 <li class="sidebar-item ">
                     <span class="material-symbols-outlined" >Notifications</span>
-                    <a href="#box-accesorios" class="local-link">ACCESORIOS</a>
+                    <a href="#scrollList" class="local-link">ACCESORIOS</a>
                 </li>
                 <li class="sidebar-item">
                     <span class="material-symbols-outlined" >mark_email_unread</span>
-                    <a href="#">TELEFONOS DESTACADOS</a>
+                    <a href="#menu_compra">TELEFONOS DESTACADOS</a>
                 </li>
                 <li class="sidebar-item">
                     <span  class="material-symbols-outlined" >shopping_cart</span>
