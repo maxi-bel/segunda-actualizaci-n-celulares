@@ -39,7 +39,7 @@ body{
 
 
 
-.logo-icono ,.logo{  
+.logo-icono, .logo{  
     width: 100px;
     border-radius: 50%;
     aspect-ratio: 1; /* Se ajusta al mismo valor que el width */
@@ -92,7 +92,7 @@ body{
 
 .sidebar{
     background-color: var(--sidebar-color);
-    height: 159dvh;
+    height: 191dvh;
     width: clamp(220px, 10dvw, 300px);
     font-size: clamp(1rem, 2.2vw, 3rem);
     display: flex;
@@ -477,7 +477,7 @@ z-index: -2;}
     content: " ";
     position: absolute;
     inset: 5px;
-    background: #7a6192;
+    background: #130322;
 
     border-radius: 20px;
     z-index: -2;
@@ -504,7 +504,7 @@ z-index: -2;}
 .cosmos-background { 
     width: 100%; 
     height: 300%; 
-    background: radial-gradient( ellipse at bottom, #19212b 0%, #090a0f 100% ); 
+    background: radial-gradient( ellipse at bottom, #010114 0%, #0c0c0c 100% ); 
     overflow: hidden; 
 } 
 .stars-container { 
@@ -557,7 +557,7 @@ z-index: -2;}
     position: relative; 
     width: 100%; 
     height: 75dvh;
-    top: -25px;
+    top: -69px;
     
     transform-style: preserve-3d; 
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); } 
@@ -577,7 +577,7 @@ z-index: -2;}
     border: 1px solid rgba(157, 0, 255, 0.3); 
     transform-style: preserve-3d; } 
 .card-back { 
-    background: linear-gradient( 135deg, rgba(20, 20, 40, 0.9), rgba(30, 30, 60, 0.8) ); border: 1px solid rgba(0, 229, 255, 0.3); transform: rotateY(180deg); } .card-content { padding: 17px; height: 100%; display: flex; flex-direction: column; position: relative; }
+    background: linear-gradient( 135deg, rgba(20, 20, 40, 0.9), rgba(30, 30, 60, 0.8) ); border: 1px solid rgba(0, 229, 255, 0.3); transform: rotateY(180deg); } .card-content { padding: 12px; height: 100%; display: flex; flex-direction: column; position: relative; }
 
 .memory-date { font-family: "Orbitron", sans-serif; font-size: 0.8rem; color: var(--accent); margin-bottom: 10px; text-shadow: 0 0 5px rgba(255, 0, 229, 0.7); } 
 
@@ -585,7 +585,7 @@ z-index: -2;}
 
 li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shadow: 0 0 7px rgba(255, 255, 255, 0.5); } 
 
-.memory-image { width: 100%; height: 150px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; border-radius: 8px; background: rgba(0, 0, 0, 0.3); } 
+.memory-image { width: 100%; height: 296px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; border-radius: 8px; background: rgba(0, 0, 0, 0.3); } 
 
 .memory-image i { color: var(--primary); font-size: 4rem; text-shadow: var(--glow-primary); animation: pulse 3s infinite alternate; z-index: 2; } 
 .glitch-effect { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient( 45deg, transparent 65%, rgba(157, 0, 255, 0.3) 70%, transparent 75% ); background-size: 200% 200%; animation: glitch 3s linear infinite; z-index: 1; } 
@@ -598,6 +598,13 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .time-stamp { color: var(--accent); } 
 .card-glow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; background: radial-gradient( circle at 50% 50%, rgba(157, 0, 255, 0.1), transparent 70% ); opacity: 0; transition: opacity 0.3s ease; } 
 .memory-card:hover .card-glow { opacity: 1; } 
+
+/* celulares en menu */
+.imagen1{ 
+    scale: .29;
+    border-radius: 40px;
+}
+
 
 /* Carousel Controls */
 
@@ -629,11 +636,11 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     /* left:-17dvw; */
     border-radius: 20px;
     z-index: 1;
-    transform-style: preserve-3d;
+
     width: 100dvw;
 }
 .card-ubicacion {
-    position: fixed;
+    position: absolute;
     top: -.05dvh;
     /* left:-0dvw; */
     background: rgba(255, 255, 255, 0.07);
@@ -668,19 +675,20 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
   height: auto;
 
   background: transparent;
-  transform: translateZ(80px);
+
 }
 .elements-ubicacion h2{
     position: absolute;
     display: inline;
     text-wrap: nowrap;
     top: -200dvh;
-  font-size: 1.5rem;
-  font-weight: 6;
+    left: -14px;
+  font-size: 1.45rem;
+  font-weight: 5;
   color: rgba(250, 247, 247, 0.92);
   text-shadow: 2px 2px 0px #444;
   text-transform: uppercase;
-animation: scroll 5s linear alternate infinite;
+animation: h2 2s linear alternate infinite;
     overflow-x:hidden ;
 }
 
@@ -709,12 +717,12 @@ animation: scroll 5s linear alternate infinite;
     display: block;}
 /* desplazamiento */
 
-@keyframes scroll {
+@keyframes h2 {
     from{
-        transform: translateX(10px);;
+        opacity: 0;
     }
     to{
-        transform: translateX(-1000px);;
+        opacity: 1;
     }
 }
 
@@ -733,13 +741,17 @@ animation: scroll 5s linear alternate infinite;
     margin-bottom:13%;
     border-radius: 20px;
 }
+.cosmos-background{
+    margin: 1%;
+    margin-bottom:13%;
+    border-radius: 20px;
+}
 
 .sidebar:has(input[type="checkbox"]:checked)~ #menu_compra{
     position: relative;
     height: 100dvh;
     width: 650px;
 }
-
 
     :root {
         --card-width: 250px; 
@@ -776,32 +788,16 @@ animation: scroll 5s linear alternate infinite;
     left: 8.7dvw;
 
 }
+
+
+
 .card-ubicacion{
     position: relative;top:-8dv}
 
-.scroll-list__wrp{ width: 60.9dvw;top:120dvh;}
+.scroll-list__wrp{ width: 80.9dvw;
+top:150dvh}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
