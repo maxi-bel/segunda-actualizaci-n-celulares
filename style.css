@@ -731,7 +731,7 @@ animation: h2 2s linear alternate infinite;
 {
 #menu_compra{
     height: 130dvh;
-    width: 2500px;
+    width: 1084px;
 }
 
 #menu_compra::after{  height: 130dvh; width: 710px;}
@@ -811,6 +811,7 @@ width: 1084px;}
 
 
 }
+
 
 
 
