@@ -731,7 +731,7 @@ animation: h2 2s linear alternate infinite;
 {
 #menu_compra{
     height: 130dvh;
-    width: 1084px;
+    width: 710px;
 }
 
 #menu_compra::after{  height: 130dvh; width: 710px;}
@@ -750,7 +750,7 @@ animation: h2 2s linear alternate infinite;
 .sidebar:has(input[type="checkbox"]:checked)~ #menu_compra{
     position: relative;
     height: 100dvh;
-    width: 650px;
+    width: 1050px;
 }
 
     :root {
@@ -811,6 +811,7 @@ width: 1084px;}
 
 
 }
+
 
 
 
