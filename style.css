@@ -719,6 +719,62 @@ animation: scroll 5s linear alternate infinite;
 }
 
 /* diseño responsive */
+@media (max-width: 768px) 
+{
+#menu_compra{
+    height: 100dvh;
+    width: 650px;
+}
+
+#menu_compra::after{  height: 100dvh; width: 650px;}
+#menu_compra::before{  height: 100dvh; width: 650px;}
+.cosmos-background{
+    margin: 1%;
+    margin-bottom:13%;
+    border-radius: 20px;
+}
+    :root {
+        --card-width: 250px; 
+        --card-height: 380px;
+        --carousel-radius: 200px;
+        justify-content:center ;
+    }
+
+    .carousel-container {
+        height: 100px; 
+        justify-content:center;/* Altura reducida */
+    }
+    .memory-card{margin-top: -35dvh}
+
+.memory-image{
+    height: 296px;
+}
+.imagen1{ 
+    scale: .29;
+    border-radius: 40px;
+}
+
+.card-inner { 
+    justify-content: flex-start;
+} .card-ubicacion.foto-local.box{ 
+
+    top: 150dvh;
+    display: block;
+    height: 100dvh;
+    width:110%;}
+
+.sidebar:has(input[type="checkbox"]:checked) .box  {
+    width: 90.8dvw;
+    left: 8.7dvw;
+
+}
+.card-ubicacion{
+    position: relative;top:-8dv}
+
+.scroll-list__wrp{ width: 60.9dvw;}
+
+}
+
 
 
 
