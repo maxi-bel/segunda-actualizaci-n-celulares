@@ -722,12 +722,12 @@ animation: scroll 5s linear alternate infinite;
 @media (max-width: 768px) 
 {
 #menu_compra{
-    height: 110dvh;
-    width: 690px;
+    height: 130dvh;
+    width: 710px;
 }
 
-#menu_compra::after{  height: 100dvh; width: 650px;}
-#menu_compra::before{  height: 100dvh; width: 650px;}
+#menu_compra::after{  height: 130dvh; width: 710px;}
+#menu_compra::before{  height: 130dvh; width: 710px;}
 .cosmos-background{
     margin: 1%;
     margin-bottom:13%;
@@ -782,6 +782,7 @@ animation: scroll 5s linear alternate infinite;
 .scroll-list__wrp{ width: 60.9dvw;}
 
 }
+
 
 
 
