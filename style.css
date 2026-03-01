@@ -790,18 +790,19 @@ animation: h2 2s linear alternate infinite;
 }
 
 
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {
-width: 150.9dvw;
+.sidebar:has(input[type="checkbox"]:not-checked) .scroll-list__wrp  {
+width: 80.9dvw;
 top:115dvh
 
 }
 .card-ubicacion{
     position: relative;top:-8dv}
 
-.scroll-list__wrp{ width: 150.9px;
-top:115dvh}
+.scroll-list__wrp{ width: 80.9dvw;
+top:105dvh}
 
 }
+
 
 
 
