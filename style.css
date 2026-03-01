@@ -678,8 +678,8 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 }
 .elements-ubicacion h2{
-    position: absolute;
-    display: inline;
+    position: relative;
+    display: inline-flex;
     text-wrap: nowrap;
     top: -200dvh;
     left: -14px;
@@ -731,7 +731,7 @@ animation: h2 2s linear alternate infinite;
 {
 #menu_compra{
     height: 130dvh;
-    width: 710px;
+    width: 2500px;
 }
 
 #menu_compra::after{  height: 130dvh; width: 710px;}
@@ -791,25 +791,26 @@ animation: h2 2s linear alternate infinite;
 
 
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {
-width: 80.9dvw;
-top:90dvh
+width: 650.9px;
+top:95dvh
 
 }
 .card-ubicacion{
-    position: relative;top:-8dv}
+    position: relative;top:-18dv}
 
-.scroll-list__wrp{ width: 80.9dvw;
-top:110dvh}
+.scroll-list__wrp{ width: 172dvw;
+top:130dvh}
+.box{ top: 150dvh;
+width: 1084px;}
+}
+.foto-local {width: 1084px;}
+.card-ubicacion{ width: 1084px;}
+.elements-ubicacion h2{
+    text-wrap: wrap;
+    letter-spacing: 2mm;
+
 
 }
-h2 {
-    text-wrap: rap;
-}
-
-
-
-
-
 
 
 
