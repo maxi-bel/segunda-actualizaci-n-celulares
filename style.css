@@ -778,10 +778,10 @@ animation: h2 2s linear alternate infinite;
     justify-content: flex-start;
 } .card-ubicacion, .foto-local.box{ 
 
-    top: 170dvh;
+    top: 190dvh;
     display: block;
-    height: 200px;
-    width:210px;}
+    height: 240px;
+    width:250px;}
 
 .sidebar:has(input[type="checkbox"]:checked) .box  {
     width: 90.8dvw;
@@ -792,15 +792,18 @@ animation: h2 2s linear alternate infinite;
 
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {
 width: 80.9dvw;
-top:115dvh
+top:90dvh
 
 }
 .card-ubicacion{
     position: relative;top:-8dv}
 
 .scroll-list__wrp{ width: 80.9dvw;
-top:105dvh}
+top:110dvh}
 
+}
+h2 {
+    text-wrap: rap;
 }
 
 
