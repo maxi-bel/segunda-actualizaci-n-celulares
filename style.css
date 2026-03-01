@@ -722,8 +722,8 @@ animation: scroll 5s linear alternate infinite;
 @media (max-width: 768px) 
 {
 #menu_compra{
-    height: 100dvh;
-    width: 650px;
+    height: 110dvh;
+    width: 690px;
 }
 
 #menu_compra::after{  height: 100dvh; width: 650px;}
@@ -733,6 +733,14 @@ animation: scroll 5s linear alternate infinite;
     margin-bottom:13%;
     border-radius: 20px;
 }
+
+.sidebar:has(input[type="checkbox"]:checked)~ #menu_compra{
+    position: relative;
+    height: 100dvh;
+    width: 650px;
+}
+
+
     :root {
         --card-width: 250px; 
         --card-height: 380px;
@@ -774,6 +782,7 @@ animation: scroll 5s linear alternate infinite;
 .scroll-list__wrp{ width: 60.9dvw;}
 
 }
+
 
 
 
