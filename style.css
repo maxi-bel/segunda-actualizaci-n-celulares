@@ -779,9 +779,10 @@ animation: scroll 5s linear alternate infinite;
 .card-ubicacion{
     position: relative;top:-8dv}
 
-.scroll-list__wrp{ width: 60.9dvw;}
+.scroll-list__wrp{ width: 60.9dvw;top:120dvh;}
 
 }
+
 
 
 
