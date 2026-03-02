@@ -252,7 +252,7 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
 }
 .sidebar:has(input[type="checkbox"]:checked) .box  {
-    width: 90.8dvw;
+    width: 60.8dvw;
     left: 8.7dvw;
 
 }
@@ -321,16 +321,7 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
 /* menu acordeon para accesorios */
 
-    .contenedor{
-    
-    height: 80vh;
-    
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-    overflow: visible;
-    }
+
     .scroll-list__wrp {
         position: absolute;
         top: 95dvh;
@@ -629,7 +620,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50dvh;
+    height: 33dvw;
     background: radial-gradient(#480d35, #17151d);
     position: absolute;
     top: 151dvh;
@@ -645,8 +636,8 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     /* left:-0dvw; */
     background: rgba(255, 255, 255, 0.07);
     width: 100dvw;
-    height: 23dvw;
-    opacity:0;
+    height: 33dvw;
+    opacity:1;
     backdrop-filter: blur(10px);
     border: 0.5px solid rgba(255, 255, 255, 0.15);
     border-radius: 25px;
@@ -654,14 +645,14 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     transition: all 1.5s linear;
 }
 .card-ubicacion:hover{
-    opacity:1 ;
+    opacity:0 ;
 }
 
-.foto-local{
-    
-    display:flex;
-    width:95dvw ;
-    max-height:48dvh ;
+.foto-local {
+    height: 47dvh;
+    display: flex;
+    width: 100dvw;
+    max-height: 48dvh;
     margin-left: 0dvh;
     position: absolute;
     top: 5px;
@@ -747,11 +738,24 @@ animation: h2 2s linear alternate infinite;
     border-radius: 20px;
 }
 
-.sidebar:has(input[type="checkbox"]:checked)~ #menu_compra{
-    position: relative;
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra{
+
     height: 100dvh;
     width: 1050px;
 }
+
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{
+
+    height: 100dvh;
+    width: 1050px;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{
+
+    height: 100dvh;
+    width: 1050px;}
+
+    .sidebar:has(input[type="checkbox"]:checked).scroll-list__wrp{
+        top: -75dvh;
+    }
 
     :root {
         --card-width: 250px; 
@@ -776,34 +780,47 @@ animation: h2 2s linear alternate infinite;
 
 .card-inner { 
     justify-content: flex-start;
-} .card-ubicacion, .foto-local.box{ 
+} .card-ubicacion{ 
 
-    top: 190dvh;
+    top: 3dvh;
     display: block;
-    height: 240px;
+    height: 450px;
     width:250px;}
+.foto-local{ 
 
-.sidebar:has(input[type="checkbox"]:checked) .box  {
-    width: 90.8dvw;
-    left: 8.7dvw;
+    top: 5dvh;
+    display: block;
+    height: 450px;
+    width:250px;}
+.box{ 
 
-}
+    top: 18dvh;
+    display: block;
+    height: 550px;
+    width:250px;}
+    .sidebar:has(input[type="checkbox"]:checked) .box {       top: 155dvh;
+        width: 280dvw;
+        height: 65dvh;
+        left: 5.7dvw;
+    }
+.button{left: 100dvw;}    
 
-
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{height: 1000px;
+margin-top: 5%;}
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {
-width: 650.9px;
-top:95dvh
-
+width: 256dvw;
+top:100dvh
 }
+
 .card-ubicacion{
     position: relative;top:-18dv}
 
 .scroll-list__wrp{ width: 172dvw;
 top:130dvh}
-.box{ top: 150dvh;
-width: 1084px;}
+.box{ top: 185dvh;
+width: 980px;}
 }
-.foto-local {width: 1084px;}
+.foto-local {width: 970px;}
 .card-ubicacion{ width: 1084px;}
 .elements-ubicacion h2{
     text-wrap: wrap;
@@ -811,6 +828,8 @@ width: 1084px;}
 
 
 }
+
+
 
 
 
