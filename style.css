@@ -1,4 +1,3 @@
-
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -34,11 +33,6 @@ body{
     --transition-speed: 0.5s;
 }
 
-
-
-
-
-
 .logo-icono, .logo{  
     width: 100px;
     border-radius: 50%;
@@ -73,8 +67,6 @@ body{
 
     }
 
-
-
 .imagen-frente:hover{
     transition: 2.5s;
     transform: scale(1.12);
@@ -83,10 +75,6 @@ body{
     left: 30px;
     opacity: 1;
 }
-
-
-
-
 
 /* sidebar profile menu style */
 
@@ -305,9 +293,6 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
 }
 
-
-
-
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp{
     margin-left: 78px;
     width: 90.4dvw;
@@ -388,9 +373,6 @@ article img:first-child {
     width: 100%;
 }
 
-
-
-
 article:hover {
     filter: drop-shadow(5px 5px 20px #646);
     transform: perspective(950px) rotateX(15deg) translateY(-5%) translateZ(0);
@@ -443,13 +425,6 @@ article:hover p {
     border-radius: 20px;
 }
 
-
-
-
-
-
-
-
 /* animacion menu compra  y accesorios*/
 #menu_compra::before {
 content: " ";
@@ -461,9 +436,6 @@ animation: animate 3.5s linear infinite;
 transition: all .3s linear;
 z-index: -2;}
 
-
-
-
 #menu_compra::after {
     content: " ";
     position: absolute;
@@ -474,10 +446,6 @@ z-index: -2;}
     z-index: -2;
 
 }
-
-
-
-
 
 @keyframes animate {
     from{
@@ -596,13 +564,11 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     border-radius: 40px;
 }
 
-
 /* Carousel Controls */
 
 .carousel-controls { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 20px; z-index: 8; } 
 .control-btn { background: rgba(20, 20, 40, 0.7); border: 1px solid var(--primary); color: var(--text-primary); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: all 0.3s ease; box-shadow: var(--glow-primary); } 
 .control-btn:hover { background: rgba(30, 30, 60, 0.9); transform: scale(1.1); } 
-
 
 
 /* Animations */
@@ -820,8 +786,8 @@ top:130dvh}
 .box{ top: 185dvh;
 width: 980px;}
 }
-.foto-local {width: 970px;}
-.card-ubicacion{ width: 1084px;}
+.foto-local {width: 1090px;}
+.card-ubicacion{ left: 5px; width: 1087px;height: 60dvh;}
 .elements-ubicacion h2{
     text-wrap: wrap;
     letter-spacing: 2mm;
@@ -829,6 +795,114 @@ width: 980px;}
 
 }
 
+@media (max-width: 950px) 
+{
+#menu_compra{
+    height: 130dvh;
+    width: 710px;
+}
+
+#menu_compra::after{  height: 130dvh; width: 710px;}
+#menu_compra::before{  height: 130dvh; width: 710px;}
+.cosmos-background{
+    margin: 1%;
+    margin-bottom:13%;
+    border-radius: 20px;
+}
+.cosmos-background{
+    margin: 1%;
+    margin-bottom:13%;
+    border-radius: 20px;
+}
+
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra{
+
+    height: 100dvh;
+    width: 1050px;
+}
+
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{
+
+    height: 100dvh;
+    width: 1050px;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{
+
+    height: 100dvh;
+    width: 1050px;}
+
+    .sidebar:has(input[type="checkbox"]:checked).scroll-list__wrp{
+        top: -75dvh;
+    }
+
+    :root {
+        --card-width: 250px; 
+        --card-height: 380px;
+        --carousel-radius: 200px;
+        justify-content:center ;
+    }
+
+    .carousel-container {
+        height: 100px; 
+        justify-content:center;/* Altura reducida */
+    }
+    .memory-card{margin-top: -35dvh}
+
+.memory-image{
+    height: 296px;
+}
+.imagen1{ 
+    scale: .29;
+    border-radius: 40px;
+}
+
+.card-inner { 
+    justify-content: flex-start;
+} .card-ubicacion{ 
+
+    top: 3dvh;
+    display: block;
+    height: 450px;
+    width:250px;}
+.foto-local{ 
+
+    top: 5dvh;
+    display: block;
+    height: 450px;
+    width:250px;}
+.box{ 
+
+    top: 18dvh;
+    display: block;
+    height: 550px;
+    width:250px;}
+    .sidebar:has(input[type="checkbox"]:checked) .box {       top: 155dvh;
+        width: 280dvw;
+        height: 65dvh;
+        left: 5.7dvw;
+    }
+.button{left: 100dvw;}    
+
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{height: 1000px;
+margin-top: 5%;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {
+width: 256dvw;
+top:100dvh
+}
+
+.card-ubicacion{
+    position: relative;top:-18dv}
+
+.scroll-list__wrp{ width: 172dvw;
+top:130dvh}
+.box{ top: 185dvh;
+width: 980px;}
+}
+.foto-local {width: 1090px;}
+.card-ubicacion{ left: 5px; width: 1087px;height: 60dvh;}
+.elements-ubicacion h2{
+    text-wrap: wrap;
+    letter-spacing: 2mm;
+}
 
 
 
