@@ -1,3 +1,4 @@
+
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -33,6 +34,11 @@ body{
     --transition-speed: 0.5s;
 }
 
+
+
+
+
+
 .logo-icono, .logo{  
     width: 100px;
     border-radius: 50%;
@@ -67,6 +73,8 @@ body{
 
     }
 
+
+
 .imagen-frente:hover{
     transition: 2.5s;
     transform: scale(1.12);
@@ -75,6 +83,10 @@ body{
     left: 30px;
     opacity: 1;
 }
+
+
+
+
 
 /* sidebar profile menu style */
 
@@ -293,6 +305,9 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
 }
 
+
+
+
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp{
     margin-left: 78px;
     width: 90.4dvw;
@@ -373,6 +388,9 @@ article img:first-child {
     width: 100%;
 }
 
+
+
+
 article:hover {
     filter: drop-shadow(5px 5px 20px #646);
     transform: perspective(950px) rotateX(15deg) translateY(-5%) translateZ(0);
@@ -425,6 +443,13 @@ article:hover p {
     border-radius: 20px;
 }
 
+
+
+
+
+
+
+
 /* animacion menu compra  y accesorios*/
 #menu_compra::before {
 content: " ";
@@ -436,6 +461,9 @@ animation: animate 3.5s linear infinite;
 transition: all .3s linear;
 z-index: -2;}
 
+
+
+
 #menu_compra::after {
     content: " ";
     position: absolute;
@@ -446,6 +474,10 @@ z-index: -2;}
     z-index: -2;
 
 }
+
+
+
+
 
 @keyframes animate {
     from{
@@ -564,11 +596,13 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     border-radius: 40px;
 }
 
+
 /* Carousel Controls */
 
 .carousel-controls { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 20px; z-index: 8; } 
 .control-btn { background: rgba(20, 20, 40, 0.7); border: 1px solid var(--primary); color: var(--text-primary); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: all 0.3s ease; box-shadow: var(--glow-primary); } 
 .control-btn:hover { background: rgba(30, 30, 60, 0.9); transform: scale(1.1); } 
+
 
 
 /* Animations */
@@ -586,7 +620,8 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 33dvw;
+    width: 98vw;
+    height: 45dvw;
     background: radial-gradient(#480d35, #17151d);
     position: absolute;
     top: 151dvh;
@@ -597,12 +632,12 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     width: 100dvw;
 }
 .card-ubicacion {
-    position: absolute;
-    top: -.05dvh;
+    position: relative;
+    top: -3dvh;
     /* left:-0dvw; */
     background: rgba(255, 255, 255, 0.07);
-    width: 100dvw;
-    height: 33dvw;
+    width: 98vw;
+    height: 41dvw;
     opacity:1;
     backdrop-filter: blur(10px);
     border: 0.5px solid rgba(255, 255, 255, 0.15);
@@ -617,11 +652,11 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .foto-local {
     height: 47dvh;
     display: flex;
-    width: 100dvw;
-    max-height: 48dvh;
+    width: 98dvw;
+    height: 38dvw;
     margin-left: 0dvh;
     position: absolute;
-    top: 5px;
+    top: 25px;
     border-radius: 20px;
 }
 .elements-ubicacion{
@@ -668,11 +703,7 @@ animation: h2 2s linear alternate infinite;
 
   display: block; /* Visible cuando .card está en hover */
 }
-.box:has(.button:hover) .card-ubicacion {
-    display: block; }
-    .button:hover ~ .card-ubicacion {
-    display: block;}
-/* desplazamiento */
+
 
 @keyframes h2 {
     from{
@@ -746,18 +777,23 @@ animation: h2 2s linear alternate infinite;
 
 .card-inner { 
     justify-content: flex-start;
-} .card-ubicacion{ 
+} 
+.card-ubicacion{ 
 
-    top: 3dvh;
+    top: -1dvh;
     display: block;
-    height: 450px;
-    width:250px;}
+    left: 5px; 
+    width: 235dvw;
+    height: 60dvh;
+    position: relative;}
+     
+
 .foto-local{ 
 
     top: 5dvh;
-    display: block;
+    display: flex;
     height: 450px;
-    width:250px;}
+    width: 970px;}
 .box{ 
 
     top: 18dvh;
@@ -771,140 +807,30 @@ animation: h2 2s linear alternate infinite;
     }
 .button{left: 100dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{height: 1000px;
-margin-top: 5%;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{       height: 490px;
+        margin-top: 2%; width: 265dvw;}
+
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 67dvh; width: 270dvw;}
+
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {
 width: 256dvw;
 top:100dvh
 }
 
-.card-ubicacion{
-    position: relative;top:-18dv}
 
 .scroll-list__wrp{ width: 172dvw;
 top:130dvh}
 .box{ top: 185dvh;
 width: 980px;}
 }
-.foto-local {width: 1090px;}
-.card-ubicacion{ left: 5px; width: 1087px;height: 60dvh;}
+
+
 .elements-ubicacion h2{
     text-wrap: wrap;
     letter-spacing: 2mm;
 
 
 }
-
-@media (max-width: 950px) 
-{
-#menu_compra{
-    height: 130dvh;
-    width: 710px;
-}
-
-#menu_compra::after{  height: 130dvh; width: 710px;}
-#menu_compra::before{  height: 130dvh; width: 710px;}
-.cosmos-background{
-    margin: 1%;
-    margin-bottom:13%;
-    border-radius: 20px;
-}
-.cosmos-background{
-    margin: 1%;
-    margin-bottom:13%;
-    border-radius: 20px;
-}
-
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra{
-
-    height: 100dvh;
-    width: 1050px;
-}
-
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{
-
-    height: 100dvh;
-    width: 1050px;}
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{
-
-    height: 100dvh;
-    width: 1050px;}
-
-    .sidebar:has(input[type="checkbox"]:checked).scroll-list__wrp{
-        top: -75dvh;
-    }
-
-    :root {
-        --card-width: 250px; 
-        --card-height: 380px;
-        --carousel-radius: 200px;
-        justify-content:center ;
-    }
-
-    .carousel-container {
-        height: 100px; 
-        justify-content:center;/* Altura reducida */
-    }
-    .memory-card{margin-top: -35dvh}
-
-.memory-image{
-    height: 296px;
-}
-.imagen1{ 
-    scale: .29;
-    border-radius: 40px;
-}
-
-.card-inner { 
-    justify-content: flex-start;
-} .card-ubicacion{ 
-
-    top: 3dvh;
-    display: block;
-    height: 450px;
-    width:250px;}
-.foto-local{ 
-
-    top: 5dvh;
-    display: block;
-    height: 450px;
-    width:250px;}
-.box{ 
-
-    top: 18dvh;
-    display: block;
-    height: 550px;
-    width:250px;}
-    .sidebar:has(input[type="checkbox"]:checked) .box {       top: 155dvh;
-        width: 280dvw;
-        height: 65dvh;
-        left: 5.7dvw;
-    }
-.button{left: 100dvw;}    
-
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{height: 1000px;
-margin-top: 5%;}
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {
-width: 256dvw;
-top:100dvh
-}
-
-.card-ubicacion{
-    position: relative;top:-18dv}
-
-.scroll-list__wrp{ width: 172dvw;
-top:130dvh}
-.box{ top: 185dvh;
-width: 980px;}
-}
-.foto-local {width: 1090px;}
-.card-ubicacion{ left: 5px; width: 1087px;height: 60dvh;}
-.elements-ubicacion h2{
-    text-wrap: wrap;
-    letter-spacing: 2mm;
-}
-
-
 
 
 
