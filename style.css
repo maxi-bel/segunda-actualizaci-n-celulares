@@ -784,7 +784,7 @@ animation: h2 2s linear alternate infinite;
     display: block;
     left: 5px; 
     height: 550px;
-    width:250px;
+    width:970px;
     position: relative;}
      
 
@@ -809,9 +809,9 @@ animation: h2 2s linear alternate infinite;
 .button{left: 100dvw;}    
 
 .sidebar:has(input[type="checkbox"]:checked) .foto-local{       height:65dvh;
-        margin-top: 2%; width: 265dvw;}
+        margin-top: 2%; width: 270dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 65dvh; width: 265dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 65dvh; width: 270dvw;}
 
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {
 width: 256dvw;
@@ -832,6 +832,7 @@ width: 980px;}
 
 
 }
+
 
 
 
