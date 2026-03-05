@@ -783,8 +783,8 @@ animation: h2 2s linear alternate infinite;
     top: -1dvh;
     display: block;
     left: 5px; 
-    width: 235dvw;
-    height: 60dvh;
+    height: 550px;
+    width:250px;
     position: relative;}
      
 
@@ -801,7 +801,7 @@ animation: h2 2s linear alternate infinite;
     height: 550px;
     width:250px;}
     .sidebar:has(input[type="checkbox"]:checked) .box {       top: 155dvh;
-        width: 280dvw;
+        width: 270dvw;
         height: 65dvh;
         left: 5.7dvw;
      . 
@@ -832,6 +832,7 @@ width: 980px;}
 
 
 }
+
 
 
 
