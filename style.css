@@ -67,7 +67,7 @@ body{
         margin-left: 0rem;
         width: 15rem;
         height: 4rem;;
-        top: 95dvh;
+        top: 95.5dvh;
         transition-delay: 2s;
         transition-duration: 2.3s;
 
@@ -678,9 +678,9 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
   font-size: 1.45rem;
   font-weight: 5;
   color: rgba(250, 247, 247, 0.92);
-  text-shadow: 2px 2px 0px #444;
+  text-shadow: 2px 4px 0px #444;
   text-transform: uppercase;
-animation: h2 2s linear alternate infinite;
+animation: h2 5s linear alternate infinite;
     overflow-x:hidden ;
 }
 
@@ -803,9 +803,8 @@ animation: h2 2s linear alternate infinite;
     .sidebar:has(input[type="checkbox"]:checked) .box {       top: 155dvh;
         width: 270dvw;
         height: 65dvh;
-        left: 5.7dvw;
-    
-                                                      }
+        left: 5.7dvw; 
+}
 .button{left: 100dvw;}    
 
 .sidebar:has(input[type="checkbox"]:checked) .foto-local{       height:65dvh;
@@ -832,6 +831,15 @@ width: 980px;}
 
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
