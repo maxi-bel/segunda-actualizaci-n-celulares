@@ -52,40 +52,11 @@ body{
 
 /*  picture styles */
 
-.sidebar-picture , .imagen-frente{
+.sidebar-picture{
     width:clamp(16.5dvb, 24.5dvb, 320px);
     margin: auto;
     opacity: 0.9;
     filter: hue-rotate(-25deg);}
-
-.imagen-frente{
-        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 12px;
-        position: absolute;
-        z-index: 10;
-        margin-left: 0rem;
-        width: 15rem;
-        height: 4rem;;
-        top: 95.5dvh;
-        transition-delay: 2s;
-        transition-duration: 2.3s;
-
-    }
-
-
-
-.imagen-frente:hover{
-    transition: 2.5s;
-    transform: scale(1.12);
-    padding: 0px;
-    margin: 0;
-    left: 30px;
-    opacity: 1;
-}
-
-
-
 
 
 /* sidebar profile menu style */
@@ -261,7 +232,7 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
     
 
 }
-.sidebar:has(input[type="checkbox"]:checked) :is(.sidebar-item a, .imagen-frente,.sidebar-profile a, .sidebar-item2  span)  {
+.sidebar:has(input[type="checkbox"]:checked) :is(.sidebar-item a,.sidebar-profile a, .sidebar-item2  span)  {
     display: none;
 
 }
@@ -831,12 +802,6 @@ width: 980px;}
 
 
 }
-
-
-
-
-
-
 
 
 
