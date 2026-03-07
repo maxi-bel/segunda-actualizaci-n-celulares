@@ -1,4 +1,11 @@
 
+
+
+
+
+
+
+
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -691,125 +698,86 @@ animation: h2 5s linear alternate infinite;
 @media (max-width: 768px) 
 {
 #menu_compra{
-    height: 130dvh;
-    width: 710px;
-}
+    height: 130dvh;width: 710px;}
 
 #menu_compra::after{  height: 130dvh; width: 710px;}
+
 #menu_compra::before{  height: 130dvh; width: 710px;}
+
 .cosmos-background{
-    margin: 1%;
-    margin-bottom:13%;
-    border-radius: 20px;
-}
+    margin: 1%;margin-bottom:13%;border-radius: 20px;}
+
 .cosmos-background{
-    margin: 1%;
-    margin-bottom:13%;
-    border-radius: 20px;
+    margin: 1%;margin-bottom:13%;border-radius: 20px;
 }
 
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra{
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 100dvh;width: 1050px;}
 
-    height: 100dvh;
-    width: 1050px;
-}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 100dvh;width: 1050px;}
 
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 100dvh;width: 1050px;}
 
-    height: 100dvh;
-    width: 1050px;}
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{
+.sidebar:has(input[type="checkbox"]:checked).scroll-list__wrp{top: -75dvh;}
 
-    height: 100dvh;
-    width: 1050px;}
+:root {--card-width: 250px; --card-height: 380px;--carousel-radius: 200px;justify-content:center ;}
 
-    .sidebar:has(input[type="checkbox"]:checked).scroll-list__wrp{
-        top: -75dvh;
-    }
+.carousel-container {height: 100px; justify-content:center;/* Altura reducida */}
 
-    :root {
-        --card-width: 250px; 
-        --card-height: 380px;
-        --carousel-radius: 200px;
-        justify-content:center ;
-    }
+.memory-card{margin-top: -35dvh}
 
-    .carousel-container {
-        height: 100px; 
-        justify-content:center;/* Altura reducida */
-    }
-    .memory-card{margin-top: -35dvh}
+.memory-image{height: 296px;}
 
-.memory-image{
-    height: 296px;
-}
-.imagen1{ 
-    scale: .29;
-    border-radius: 40px;
-}
+.imagen1{ scale: .29;border-radius: 40px;}
 
-.card-inner { 
-    justify-content: flex-start;
-} 
-.card-ubicacion{ 
+.card-inner { justify-content: flex-start;} 
 
-    top: -1dvh;
-    display: block;
-    left: 5px; 
-    height: 550px;
-    width:970px;
-    position: relative;}
-     
+.card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 550px;width:970px;position: relative;}
 
-.foto-local{ 
 
-    top: 5dvh;
-    display: flex;
-    height: 450px;
-    width: 970px;}
-.box{ 
+.foto-local{ top: 5dvh;display: flex;height: 450px;width: 970px;}
 
-    top: 18dvh;
-    display: block;
-    height: 550px;
-    width:250px;}
-    .sidebar:has(input[type="checkbox"]:checked) .box {       top: 155dvh;
-        width: 270dvw;
-        height: 65dvh;
-        left: 5.7dvw; 
-}
+.box{ top: 18dvh;display: block;height: 550px;width:250px;}
+
+.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 270dvw;height: 65dvh;left: 5.7dvw; }
+
 .button{left: 100dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{       height:65dvh;
-        margin-top: 2%; width: 270dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:65dvh;margin-top: 2%; width: 270dvw;}
 
 .sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 65dvh; width: 270dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {
-width: 256dvw;
-top:100dvh
-}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 256dvw;}
 
 
-.scroll-list__wrp{ width: 172dvw;
-top:130dvh}
-.box{ top: 185dvh;
-width: 980px;}
-}
+.scroll-list__wrp{ width: 172dvw;top:130dvh}
+
+.box{ top: 185dvh;width: 980px;}
 
 
-.elements-ubicacion h2{
-    text-wrap: wrap;
-    letter-spacing: 2mm;
+
+.elements-ubicacion h2{text-wrap: wrap;letter-spacing: 2mm;}
+
+
+article li {top: -51dvw;left: 190dvw;}
+
 
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* pantalla horizontal */
-
 
 
 
