@@ -223,12 +223,12 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
 }
 .sidebar:has(input[type="checkbox"]:checked) .box  {
-    width: 60.8dvw;
-    left: 8.7dvw;
+    width: 100.8dvw;
+
 
 }
-.sidebar:has(input[type="checkbox"]:checked) .card  {
-    width: 991dvw;
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion  {
+    width: 100dvw;
     
 
 }
@@ -392,18 +392,20 @@ article:hover img:last-child {
     transform: translateY(15%);
 }
 
-article p {
+article li {
     position: relative;
-
-    top: -49%;
-    left: 79%;
-    margin: 65px;
+    color: #010114;
+    top: -11dvw;
+    font-size: large;
+    left: 60dvw;
+    scale: 2;
+    margin: 15px;
     width: 650px;
     height: 50%;
     object-fit: cover;
 
-    transition: 0.5s ease;
-    opacity:0;
+    transition: 1.5s ease;
+    opacity:1;
 }
 
 article:hover p {
@@ -607,10 +609,10 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     top: -3dvh;
     /* left:-0dvw; */
     background: rgba(255, 255, 255, 0.07);
-    width: 98vw;
+    width: 198dvw;
     height: 41dvw;
     opacity:1;
-    backdrop-filter: blur(10px);
+
     border: 0.5px solid rgba(255, 255, 255, 0.15);
     border-radius: 25px;
     box-shadow: 0 25px 45px rgba(0,0,0,0.05);
@@ -806,7 +808,7 @@ width: 980px;}
 
 
 
-
+/* pantalla horizontal */
 
 
 
