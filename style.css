@@ -426,7 +426,7 @@ article:hover p {
 /* animacion menu compra  y accesorios*/
 #menu_compra::before {
 content: " ";
-position: absolute;
+position: inherit;
 width: 180dvw;
 height: 110dvb;
 background: linear-gradient(180deg ,#ff00c8, cyan);
@@ -439,7 +439,7 @@ z-index: -2;}
 
 #menu_compra::after {
     content: " ";
-    position: absolute;
+    position:inherit;
     inset: 5px;
     background: #130322;
 
@@ -606,9 +606,10 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 }
 .card-ubicacion {
     position: relative;
+
     top: -3dvh;
     /* left:-0dvw; */
-    background: rgba(255, 255, 255, 0.07);
+    background: rgba(77, 23, 139, 0.07);
     width: 198dvw;
     height: 41dvw;
     opacity:1;
@@ -633,27 +634,26 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     border-radius: 20px;
 }
 .elements-ubicacion{
-  position: absolute;
-  top: 200dvh;
-  left: 50px;
-  width: 200px;
-  height: auto;
-
-  background: transparent;
+    top: 200dvh;
+    left: 50px;
+    width: 200px;
+    height: auto;
+    background: transparent;
+    position: absolute;
 
 }
 .elements-ubicacion h2{
     position: relative;
     display: inline-flex;
-    text-wrap: nowrap;
-    top: -200dvh;
+    text-wrap: wrap;
+    top: -190dvh;
+    font-size: 2.05rem;
+    font-weight: 5;
+    color: rgba(234, 235, 238, 0.92);
+    text-shadow: 2px 4px 0px #444;
+    text-transform: uppercase;
+    animation: h2 5s linear alternate infinite;
     left: -14px;
-  font-size: 1.45rem;
-  font-weight: 5;
-  color: rgba(250, 247, 247, 0.92);
-  text-shadow: 2px 4px 0px #444;
-  text-transform: uppercase;
-animation: h2 5s linear alternate infinite;
     overflow-x:hidden ;
 }
 
@@ -758,19 +758,6 @@ article li {top: -51dvw;left: 190dvw;}
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* pantalla horizontal */
 
 
 
