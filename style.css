@@ -758,6 +758,11 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+@media (orientation: landscape){
+    .scroll-list__wrp{ width: 100dvw;top:130dvh;}
+
+}
+
 
 
 
