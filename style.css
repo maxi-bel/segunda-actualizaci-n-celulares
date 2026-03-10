@@ -742,9 +742,9 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 256dvw;}
 
 
-.scroll-list__wrp{ width: 172dvw;top:130dvh; display: flexbox;}
+.scroll-list__wrp{ width: 172dvw;top:130dvh;}
 
-li{ position: relative;left: 200px;}
+
 
 .box{ top: 185dvh;width: 980px;}
 
@@ -758,8 +758,6 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
-
-
 
 
 
