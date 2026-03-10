@@ -609,7 +609,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
     top: -3dvh;
     /* left:-0dvw; */
-    background: rgba(77, 23, 139, 0.07);
+    background: rgba(57, 56, 58, 0.788);
     width: 198dvw;
     height: 41dvw;
     opacity:1;
@@ -647,9 +647,9 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     display: inline-flex;
     text-wrap: wrap;
     top: -190dvh;
-    font-size: 2.05rem;
+    font-size: 1.8rem;
     font-weight: 5;
-    color: rgba(234, 235, 238, 0.92);
+    color: rgba(12, 6, 22, 0.92);
     text-shadow: 2px 4px 0px #444;
     text-transform: uppercase;
     animation: h2 5s linear alternate infinite;
@@ -742,7 +742,9 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 256dvw;}
 
 
-.scroll-list__wrp{ width: 172dvw;top:130dvh}
+.scroll-list__wrp{ width: 172dvw;top:130dvh; display: flexbox;}
+
+li{ position: relative;left: 200px;}
 
 .box{ top: 185dvh;width: 980px;}
 
@@ -756,12 +758,6 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
-
-
-
-
-
-
 
 
 
