@@ -645,7 +645,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     position: relative;
     display: inline-flex;
     text-wrap: wrap;
-    top: -186dvh;
+    top: -180dvh;
     font-size: 1.8rem;
     font-weight:bold;
     color: rgba(12, 6, 22, 0.92);
@@ -767,16 +767,17 @@ article li {top: -51dvw;left: 190dvw;}
 
 .box{height: 550px;width:95dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 270dvw;height: 65dvh;left: 5.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 270dvw;height: 95dvh;left: 5.7dvw; }
 
 .button{left: 60dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:65dvh;margin-top: 2%; width: 105dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:95dvh;margin-top: 2%; width: 195dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 65dvh; width: 110dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 95dvh; width: 190dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box{ width:110dvw; }    
+
 }
+
 
 
 
