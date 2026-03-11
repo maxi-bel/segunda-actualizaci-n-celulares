@@ -767,16 +767,17 @@ article li {top: -51dvw;left: 190dvw;}
 
 .box{height: 550px;width:965dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 160dvw;height: 125dvh;left: 5.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 160dvw;height: 145dvh;left: 5.7dvw; }
 
 .button{left: 60dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:125dvh;margin-top: 2%; width: 165dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:145dvh;margin-top: 2%; width: 155dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 125dvh; width: 160dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 145dvh; width: 160dvw;}
 
 
 }
+
 
 
 
