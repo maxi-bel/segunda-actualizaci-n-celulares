@@ -758,7 +758,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 }
 @media (orientation: landscape){
-    .scroll-list__wrp{ width: 125dvw;top:130dvh;}
+    .scroll-list__wrp{ height:30dvh; width: 132dvw;top:130dvh;}
     .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {width: 143dvw;} 
     .card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
 
@@ -777,6 +777,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 
 
 
