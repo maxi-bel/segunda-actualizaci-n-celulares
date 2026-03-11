@@ -645,7 +645,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     position: relative;
     display: inline-flex;
     text-wrap: wrap;
-    top: -190dvh;
+    top: -186dvh;
     font-size: 1.8rem;
     font-weight:bold;
     color: rgba(12, 6, 22, 0.92);
@@ -777,6 +777,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 .sidebar:has(input[type="checkbox"]:checked) .box{ width:110dvw; }    
 }
+
 
 
 
