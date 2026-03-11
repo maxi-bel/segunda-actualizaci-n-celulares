@@ -760,8 +760,26 @@ article li {top: -51dvw;left: 190dvw;}
 }
 @media (orientation: landscape){
     .scroll-list__wrp{ width: 95dvw;top:130dvh;}
-    .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {width: 143dvw;}
+    .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {width: 143dvw;} 
+    .card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 550px;width:970px;position: relative;}
+
+
+.foto-local{ top: 5dvh;display: flex;height: 450px;width: 94dvw;}
+
+.box{ top: 18dvh;display: block;height: 550px;width:95dvw;}
+
+.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 270dvw;height: 65dvh;left: 5.7dvw; }
+
+.button{left: 60dvw;}    
+
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:65dvh;margin-top: 2%; width: 105dvw;}
+
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 65dvh; width: 110dvw;}
+
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 110dvw;}
+    
 }
+
 
 
 
