@@ -730,13 +730,13 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .box{ top: 18dvh;display: block;height: 550px;width:250px;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 270dvw;height: 65dvh;left: 5.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 190dvw;height: 85dvh;left: 5.7dvw; }
 
 .button{left: 100dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:65dvh;margin-top: 2%; width: 270dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:85dvh;margin-top: 2%; width: 190dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 65dvh; width: 270dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 190dvw;}
 
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 256dvw;}
 
@@ -777,6 +777,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 
 
 
