@@ -703,11 +703,11 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     margin: 1%;margin-bottom:13%;border-radius: 20px;
 }
 
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 100dvh;width: 1050px;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 100dvh;width: 1250px;}
 
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 100dvh;width: 1050px;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 100dvh;width: 1250px;}
 
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 100dvh;width: 1050px;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 100dvh;width: 1250px;}
 
 .sidebar:has(input[type="checkbox"]:checked).scroll-list__wrp{top: -75dvh;}
 
@@ -758,8 +758,8 @@ article li {top: -51dvw;left: 190dvw;}
 
 }
 @media (orientation: landscape){
-    .scroll-list__wrp{ height:40dvh; width: 132dvw;top:130dvh;}
-    .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {width: 143dvw; height:40dvh;} 
+    .scroll-list__wrp{ height:60dvh; width: 132dvw;top:130dvh;}
+    .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {width: 143dvw; height:60dvh;} 
     .card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
 
 
@@ -777,6 +777,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 
 
 
