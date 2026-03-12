@@ -738,7 +738,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 350dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 350dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 320dvw;}
 
 
 .scroll-list__wrp{ width: 172dvw;top:130dvh;}
@@ -777,6 +777,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 
 
 
