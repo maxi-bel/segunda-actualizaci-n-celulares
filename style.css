@@ -757,23 +757,40 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 @media (orientation: landscape){
-    .scroll-list__wrp{ height:60dvh; width: 132dvw;top:130dvh;}
-    .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:110dvh;width: 143dvw; height:60dvh;} 
-    .card-ubicacion{ top: -440px;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
+    #menu_compra{
+    height: 220dvh;width: 980px;}
+
+#menu_compra::after{  height: 220dvh; width: 980px;}
+
+#menu_compra::before{  height: 220dvh; width: 980px;}
+
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 145dvh;width: 1050px;}
+
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 145dvh;width: 1190px;}
+
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 145dvh;width: 1190px;}
+.sidebar:has(input[type="checkbox"]:checked) .card-inner{height:100%;}
+    
+    .card-content{ height: 100%;}
+    .card-inner{ height:110%; top: -130px}
+    .scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;}
+    .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:150dvh;width: 143dvw; height:60dvh;} 
+    .card-ubicacion{ top: -448px;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
 
 
-.foto-local{ position: relative; top: 10px;height: 450px;width: 165dvw;}
+.foto-local{ position: relative; top: 30px;height: 450px;width: 165dvw;}
 
-.box{position:relative; top:400px; height: 550px;width:165dvw;}
+.box{position:relative; top:690px; height: 550px;width:165dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { position:relative;top:450px;width: 175dvw;height: 155dvh;left: 1.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { position:relative;top:550px;width: 175dvw;height: 155dvh;left: 1.7dvw; }
 
 .button{left: 60dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ position:relative;height:155dvh;margin-top: 2%; width: 173dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ position:relative;height:155dvh;margin-top: 1%; width: 173dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{position:relative;height: 155dvh; width: 160dvw;top:-590px;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{position:relative;height: 155dvh; width: 160dvw;top:-580px;}
 
 
 }
