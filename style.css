@@ -734,11 +734,11 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .button{left: 100dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:85dvh;margin-top: 2%; width: 256dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:85dvh;margin-top: 2%; width: 269dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 256dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 269dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 256dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 269dvw;}
 
 
 .scroll-list__wrp{ width: 172dvw;top:130dvh;}
@@ -777,6 +777,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 
 
 
