@@ -760,71 +760,20 @@ article li {top: -51dvw;left: 190dvw;}
 @media (orientation: landscape){
     .scroll-list__wrp{ height:60dvh; width: 132dvw;top:130dvh;}
     .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:110dvh;width: 143dvw; height:60dvh;} 
-    .card-ubicacion{ top: 150px;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
+    .card-ubicacion{ top: -440px;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
 
 
-.foto-local{ position: relative; top: 650px;height: 450px;width: 165dvw;}
+.foto-local{ position: relative; top: 10px;height: 450px;width: 165dvw;}
 
-.box{position:relative; top:650px; height: 550px;width:165dvw;}
+.box{position:relative; top:400px; height: 550px;width:165dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { position:relative;top:750px;width: 160dvw;height: 155dvh;left: 5.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { position:relative;top:450px;width: 175dvw;height: 155dvh;left: 1.7dvw; }
 
 .button{left: 60dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ position:relative;height:155dvh;margin-top: 2%; width: 155dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ position:relative;height:155dvh;margin-top: 2%; width: 173dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{position:relative;height: 155dvh; width: 160dvw;top:750px;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{position:relative;height: 155dvh; width: 160dvw;top:-590px;}
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
