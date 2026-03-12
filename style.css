@@ -763,9 +763,9 @@ article li {top: -51dvw;left: 190dvw;}
     .card-ubicacion{ top: 450px;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
 
 
-.foto-local{ position: relative; top: 450px;height: 450px;width: 165dvw;}
+.foto-local{ position: relative; top: 50px;height: 450px;width: 165dvw;}
 
-.box{position:relative; top:450px; height: 550px;width:165dvw;}
+.box{position:relative; top:50px; height: 550px;width:165dvw;}
 
 .sidebar:has(input[type="checkbox"]:checked) .box { position:relative;top:450px;width: 160dvw;height: 155dvh;left: 5.7dvw; }
 
@@ -777,6 +777,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 
 
 
