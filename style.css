@@ -773,12 +773,13 @@ article li {top: -51dvw;left: 190dvw;}
 .sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 145dvh;width: 1190px;}
 .sidebar:has(input[type="checkbox"]:checked) .card-inner{height:100%;}
     
-    .card-content{ height: 100%;}
-    .card-inner{ height:110%; top: -130px}
-    .scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;}
-    .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:150dvh;width: 143dvw; height:60dvh;} 
-    .card-ubicacion{ top: -448px;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
+.card-content{ height: 100%;}
+.card-inner{ height:110%; top: -130px}
+.scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:150dvh;width: 143dvw; height:60dvh;} 
+.card-ubicacion{ top: -448px;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
 
+.sidebar{height:280dvh}
 
 .foto-local{ position: relative; top: 30px;height: 450px;width: 165dvw;}
 
@@ -794,3 +795,4 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
