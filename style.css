@@ -765,18 +765,19 @@ article li {top: -51dvw;left: 190dvw;}
 
 .foto-local{ top: 75dvh;height: 450px;width: 165dvw;}
 
-.box{top:125dvh; height: 550px;width:165dvw;}
+.box{top:75dvh; height: 550px;width:165dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { top: 137dvh;width: 160dvw;height: 155dvh;left: 5.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { top: 75dvh;width: 160dvw;height: 155dvh;left: 5.7dvw; }
 
 .button{left: 60dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:155dvh;margin-top: 2%; width: 155dvw;top:137dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:155dvh;margin-top: 2%; width: 155dvw;top:75dvh;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 155dvh; width: 160dvw;top:137dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 155dvh; width: 160dvw;top:75dvh;}
 
 
 }
+
 
 
 
