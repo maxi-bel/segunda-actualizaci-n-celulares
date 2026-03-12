@@ -759,8 +759,7 @@ article li {top: -51dvw;left: 190dvw;}
 }
 
 @media (orientation: landscape){
-    #menu_compra{
-    height: 220dvh;width: 980px;}
+#menu_compra{ height: 220dvh;width: 980px;}
 
 #menu_compra::after{  height: 220dvh; width: 980px;}
 
@@ -776,7 +775,7 @@ article li {top: -51dvw;left: 190dvw;}
 .card-content{ height: 100%;}
 .card-inner{ height:110%; top: -130px}
 .scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;}
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:150dvh;width: 143dvw; height:60dvh;} 
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:150dvh;width: 143dvw; height:90dvh;} 
 .card-ubicacion{ top: -448px;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
 
 .sidebar{height:280dvh}
@@ -795,4 +794,5 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 
