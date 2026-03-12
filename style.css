@@ -771,12 +771,13 @@ article li {top: -51dvw;left: 190dvw;}
 
 .button{left: 60dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:155dvh;margin-top: 2%; width: 155dvw;top:125dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:155dvh;margin-top: 2%; width: 155dvw;top:85dvh;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 155dvh; width: 160dvw;top:125dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 155dvh; width: 160dvw;top:85dvh;}
 
 
 }
+
 
 
 
