@@ -734,11 +734,11 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .button{left: 100dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:85dvh;margin-top: 2%; width: 269dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:85dvh;margin-top: 2%; width: 289dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 269dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 289dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 269dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 289dvw;}
 
 
 .scroll-list__wrp{ width: 172dvw;top:130dvh;}
@@ -763,7 +763,7 @@ article li {top: -51dvw;left: 190dvw;}
     .card-ubicacion{ top: -10dvh;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
 
 
-.foto-local{ top: -25dvh;height: 450px;width: 165dvw;}
+.foto-local{ top: -5dvh;height: 450px;width: 165dvw;}
 
 .box{top:165dvh; height: 550px;width:165dvw;}
 
@@ -771,12 +771,13 @@ article li {top: -51dvw;left: 190dvw;}
 
 .button{left: 60dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:155dvh;margin-top: 2%; width: 155dvw;top:-25dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:155dvh;margin-top: 2%; width: 155dvw;top:-5dvh;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 155dvh; width: 160dvw;top:-25dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 155dvh; width: 160dvw;top:-5dvh;}
 
 
 }
+
 
 
 
