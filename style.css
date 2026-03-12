@@ -767,7 +767,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 .box{top:75dvh height: 550px;width:165dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { top: 167dvh;width: 160dvw;height: 155dvh;left: 5.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { top: 67dvh;width: 160dvw;height: 155dvh;left: 5.7dvw; }
 
 .button{left: 60dvw;}    
 
@@ -777,6 +777,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 
 
 
