@@ -1,3 +1,4 @@
+
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -227,7 +228,8 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
 }
 .sidebar:has(input[type="checkbox"]:checked) .card-ubicacion  {
-    width: 100dvw;
+    width: 102.5dvw;
+   
     
 
 }
@@ -293,18 +295,18 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
 
     .scroll-list__wrp {
+        display: flexbox;
         position: absolute;
         top: 95dvh;
         margin-left: 60px;
-    width: 80.9dvw;
-    height: 48dvh;
-    overflow-y: scroll;
-    border-radius: 36px;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-
+        width: 80.9dvw;
+        height: 48dvh;
+        overflow-y: scroll;
+        border-radius: 36px;
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
     .scroll-list__wrp::-webkit-scrollbar {
     display: none;
@@ -427,7 +429,7 @@ article:hover p {
 content: " ";
 position: inherit;
 width: 180dvw;
-height: 110dvb;
+height: 60dvh;
 background: linear-gradient(180deg ,#ff00c8, cyan);
 animation: animate 3.5s linear infinite; 
 transition: all .3s linear;
@@ -464,12 +466,12 @@ z-index: -2;}
 .title { font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 0 15px rgba(157, 0, 255, 0.5); animation: pulse 3s infinite alternate; } 
 
  /*Cosmic Background  */
-.cosmos-background {
-    width: 100%;
-    height: 280%;
-    background: radial-gradient( ellipse at bottom, #010114 0%, #0c0c0c 100% );
-    overflow: hidden;
-}
+.cosmos-background { 
+    width: 100%; 
+    height: 300%; 
+    background: radial-gradient( ellipse at bottom, #010114 0%, #0c0c0c 100% ); 
+    overflow: hidden; 
+} 
 .stars-container { 
 
     position: absolute; 
@@ -589,25 +591,25 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 /* ubicacion */
 
 .box {
-    display: flow;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 98vw;
+    width: 102dvw;
     height: 45dvw;
     background: radial-gradient(#480d35, #17151d);
     position: absolute;
-    top: 171px;
-    left: -5dvw;
+    top: 151dvh;
+    /* left:-17dvw; */
     border-radius: 20px;
     z-index: 1;
-    width: 100dvw;
 }
 .card-ubicacion {
+    display: flex;
     position: relative;
-    top: -13px;
-    left: inherit;
+    top: -0dvh;
+    /* left:-0dvw; */
     background: rgba(57, 56, 58, 0.788);
-    max-width:164.3dvw ;
+    width: 102dvw;
     height: 41dvw;
     opacity:1;
     border: 0.5px solid rgba(255, 255, 255, 0.15);
@@ -622,7 +624,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .foto-local {
     height: 47dvh;
     display: flex;
-    width: 98dvw;
+    width: 102dvw;
     height: 38dvw;
     margin-left: 0dvh;
     position: absolute;
@@ -642,9 +644,9 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     position: relative;
     display: inline-flex;
     text-wrap: wrap;
-    top: -200dvh;
+    top: -190dvh;
     font-size: 1.8rem;
-    font-weight:bold;
+    font-weight: 5;
     color: rgba(12, 6, 22, 0.92);
     text-shadow: 2px 4px 0px #444;
     text-transform: uppercase;
@@ -668,11 +670,11 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 }
 
 
-.box:has(.card-ubicacion:hover) .button {
-
-  display: block; /* Visible cuando .card está en hover */
-}
-
+/* .box:has(.card-ubicacion:hover) .button { */
+/*  */
+  /* display: block; Visible cuando .card está en hover */
+/* } */
+/*  */
 
 @keyframes h2 {
     from{
@@ -684,7 +686,10 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 }
 
 /* diseño responsive */
-@media (max-width: 768px) 
+
+@media only screen and (min-width: 320px) and (max-width: 736px) and (orientation: portrait) 
+  /* Estilos específicos para pantalla vertical */
+
 {
 #menu_compra{
     height: 130dvh;width: 710px;}
@@ -754,8 +759,10 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+@media only screen and (min-width: 320px) and (max-width: 736px) and (orientation: landscape) {
+  /* Estilos específicos para pantalla horizontal */
 
-@media (orientation: landscape){
+
 #menu_compra{ height: 220dvh;width: 980px;}
 
 #menu_compra::after{  height: 220dvh; width: 980px;}
@@ -791,6 +798,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
+
 
 
 
