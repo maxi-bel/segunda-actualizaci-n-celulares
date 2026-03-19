@@ -781,7 +781,7 @@ article li {top: -51dvw;left: 190dvw;}
 .scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;} 
 article li {top: -22dvw;left: 110dvw;}
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:160dvh;width: 143dvw; height:100dvh;} 
-.sidebar:has(input[type="checkbox"]:checked) li {left:110dvw ;top: -41dvh;}
+.sidebar:has(input[type="checkbox"]:checked) article li {left:110dvw ;top: -41dvh;}
     
 .card-ubicacion{ top: -1px;display: flex;left: -0px; height: 550px;width:165dvw;position: absolute;}
 
