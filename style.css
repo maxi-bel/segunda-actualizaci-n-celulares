@@ -732,7 +732,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .box{ top: 18dvh;display: block;height: 550px;width:250px;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 256dvw;height: 85dvh;left: 5.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 350dvw;height: 85dvh;left: 5.7dvw; }
 
 .button{left: 100dvw;}    
 
