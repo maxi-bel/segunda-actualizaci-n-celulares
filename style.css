@@ -759,7 +759,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 
 }
-@media only screen and (min-width: 320px) and (max-width: 736px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
   /* Estilos específicos para pantalla horizontal */
 
 
@@ -779,26 +779,24 @@ article li {top: -51dvw;left: 190dvw;}
 .card-content{ height: 100%;}
 .card-inner{ height:110%; top: -130px}
 .scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;}
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:150dvh;width: 143dvw; height:90dvh;} 
-.card-ubicacion{ top: -448px;display: block;left: 5px; height: 550px;width:170dvw;position: relative;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:160dvh;width: 143dvw; height:100dvh;} 
+.sidebar:has(input[type="checkbox"]:checked) li {left:110dvw ;top: -41dvh;}
+    
+.card-ubicacion{ top: -1px;display: flex;left: -0px; height: 550px;width:165dvw;position: absolute;}
 
 .sidebar{height:280dvh}
 
-.foto-local{ position: relative; top: 30px;height: 450px;width: 165dvw;}
+.foto-local{ position: relative; top: 30px;height: 450px;width: 3500dvw;}
 
-.box{position:relative; top:690px; height: 550px;width:165dvw;}
+.box{position:relative; top:590px; height: 550px;width:165dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { position:relative;top:550px;width: 175dvw;height: 155dvh;left: 1.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { position:relative;top:550px;width: 160dvw;height: 150dvh;left: 1.7dvw; }
 
 .button{left: 60dvw;}    
 
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ position:relative;height:155dvh;margin-top: 1%; width: 173dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .foto-local{ position:relative;height:155dvh;margin-top: 1%; width: 193dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{position:relative;height: 155dvh; width: 160dvw;top:-580px;}
+.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{position:absolute;height: 155dvh; width: 160dvw;top:0px;}
 
 
 }
-
-
-
-
