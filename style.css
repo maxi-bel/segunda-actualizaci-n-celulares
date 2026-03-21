@@ -563,6 +563,49 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .time-stamp { color: var(--accent); } 
 .card-glow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; background: radial-gradient( circle at 50% 50%, rgba(157, 0, 255, 0.1), transparent 70% ); opacity: 0; transition: opacity 0.3s ease; } 
 .memory-card:hover .card-glow { opacity: 1; } 
+/* botones en tarjeta celulares */
+.carrito-celulares{
+    margin-left: 100px;
+    border-radius: 20px;
+    border: 2px solid #48e;
+    color: #fff;
+    background-color: #41333c;
+    transition: 2s;
+}
+.carrito-celulares:hover{
+    scale: 1.1;
+}
+.caracteristicas {
+    position: relative;
+    top: 0px;
+    height: 45px;
+    width: 110px;
+    margin-left: 120px;     
+    box-shadow:  2px 4px 3px #0a0a0a;
+    border-radius: 5px;
+    background-color: #150824;
+    color: #fff;
+    
+
+}
+.caracteristicas-mi8{ 
+    height: 45px;
+    position: relative;
+    top: -60px;    
+    width: 110px;
+    margin-left: 120px; 
+    box-shadow:  2px 4px 3px #2e2b2d;
+    border-radius: 5px;
+    background-color: #150824;
+    color: #fff;
+}
+
+.caracteristicas:hover, .caracteristicas-mi8:hover{
+  transform: translateY(-2px);
+}
+.caracteristicas-mi8:active,.caracteristicas:active{
+  display: none;}
+
 
 /* celulares en menu */
 .imagen1{ 
@@ -670,11 +713,6 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 }
 
 
-/* .box:has(.card-ubicacion:hover) .button { */
-/*  */
-  /* display: block; Visible cuando .card está en hover */
-/* } */
-/*  */
 
 @keyframes h2 {
     from{
@@ -684,6 +722,10 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
         opacity: 1;
     }
 }
+
+/* footer */
+
+
 
 /* diseño responsive */
 
