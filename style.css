@@ -588,22 +588,12 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     
 
 }
-.caracteristicas-mi8{ 
-    height: 45px;
-    position: relative;
-    top: -60px;    
-    width: 110px;
-    margin-left: 120px; 
-    box-shadow:  2px 4px 3px #2e2b2d;
-    border-radius: 5px;
-    background-color: #150824;
-    color: #fff;
-}
+
 
 .caracteristicas:hover, .caracteristicas-mi8:hover{
   transform: translateY(-2px);
 }
-.caracteristicas-mi8:active,.caracteristicas:active{
+.caracteristicas:active{
   display: none;}
 
 
