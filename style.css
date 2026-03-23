@@ -1,3 +1,4 @@
+
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -295,12 +296,12 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 }
 .carrito-accesorios:active{ transform: translateY(-2px);
 }
-.carrito-accesorios:hover{ transform: none;}
+
 /* menu acordeon para accesorios */
 
 
     .scroll-list__wrp {
-        display: flexbox;
+    
         position: absolute;
         top: 95dvh;
         margin-left: 60px;
@@ -312,6 +313,7 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
         scroll-behavior: smooth;
         scrollbar-width: none;
         -ms-overflow-style: none;
+
     }
     .scroll-list__wrp::-webkit-scrollbar {
     display: none;
@@ -325,6 +327,7 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
         transform: scale(1.5);
         opacity: 0.2;
         border: 2px solid transparent;
+ 
     }
 
     .scroll-list__item.active {
@@ -334,6 +337,8 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
 
 
 /* animacion para accesrios */
+
+
 
 article {
 
@@ -346,7 +351,7 @@ article {
     width: 290px;
     height: 100%;
     transition: all 0.3s ease;
-    filter: drop-shadow(0 4pz 20px) rgb(196, 153, 196);
+  
 }
 
 article img:first-child {
@@ -366,37 +371,16 @@ article img:first-child {
 }
 
 
+img{transition: 1.2s linear;}
 
-
-article:hover {
-    filter: drop-shadow(5px 5px 20px #646);
+img:hover {
+    filter: drop-shadow(5px 105px 50px #646);
     transform: perspective(950px) rotateX(15deg) translateY(-5%) translateZ(0);
 }
 
-article::before {
-    content: "";
-    position: absolute;
-    border-radius: 20px;
-    top: 325px;
-    height: 30%;
-    width: 95%;
-    background-image: linear-gradient(
-    to bottom,
-    transparent 10%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0) 95%);
-    opacity: 0;
-    transition: all 0.5s ease;
-}
 
-article:hover::before {
-    opacity: .40;
-}
 
-article:hover img:last-child {
-    opacity: 1;
-    transform: translateY(15%);
-}
+
 
 article li {
     position: relative;
@@ -417,9 +401,6 @@ article li {
 article:hover p {
     opacity: 1;
 
-    transform: translate3d(90px, 1px, 0px);
-
-    border-radius: 20px;
 }
 
 
@@ -761,8 +742,9 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 100dvh;width: 1190px;}
 
 .sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 100dvh;width: 1190px;}
-
+.carrito-celularesmi8{position: relative; top:-17px;}
 .caracteristicas-mi8{ height: 45px;position: relative;top: -20px;    width: 110px;margin-left: 120px; box-shadow:  2px 4px 3px #2e2b2d;border-radius: 5px;background-color: #150824;color: #fff;}
+
 
 .sidebar:has(input[type="checkbox"]:checked).scroll-list__wrp{top: -75dvh;}
 
@@ -803,10 +785,12 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .box{ top: 185dvh;width: 980px;}
 
 
+
 .elements-ubicacion h2{text-wrap: wrap;letter-spacing: 2mm;}
 
 
 article li {top: -51dvw;left: 190dvw;}
+
 
 
 }
