@@ -748,6 +748,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .sidebar:has(input[type="checkbox"]:checked).scroll-list__wrp{top: -75dvh;}
 
+
 :root {--card-width: 250px; --card-height: 380px;--carousel-radius: 200px;justify-content:center ;}
 
 .carousel-container {height: 100px; justify-content:center;/* Altura reducida */}
@@ -765,7 +766,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .foto-local{ top: 5dvh;display: flex;height: 450px;width: 970px;}
 
-.box{ top: 18dvh;display: block;height: 550px;width:250px;}
+.box{ top: 18dvh;display: block;height: 590px;width:250px;}
 
 .sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 350dvw;height: 85dvh;left: 5.7dvw; }
 
@@ -775,7 +776,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 350dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 320dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 320dvw;height: 75dvh;}
 
 
 .scroll-list__wrp{ width: 172dvw;top:130dvh;}
@@ -820,7 +821,7 @@ article li {top: -51dvw;left: 190dvw;}
 
 .scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;} 
 article li {top: -22dvw;left: 110dvw;}
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:160dvh;width: 143dvw; height:100dvh;} 
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:160dvh;width: 143dvw; height:120dvh;} 
 .sidebar:has(input[type="checkbox"]:checked) article li {left:110dvw ;top: -41dvh;}
     
 .card-ubicacion{ top: -1px;display: flex;left: -0px; height: 550px;width:165dvw;position: absolute;}
@@ -829,7 +830,7 @@ article li {top: -22dvw;left: 110dvw;}
 
 .foto-local{ position: relative; top: 30px;height: 450px;width: 3500dvw;}
 
-.box{position:relative; top:590px; height: 550px;width:165dvw;}
+.box{position:relative; top:40px; height: 550px;width:165dvw;}
 
 .sidebar:has(input[type="checkbox"]:checked) .box { position:relative;top:550px;width: 160dvw;height: 150dvh;left: 1.7dvw; }
 
