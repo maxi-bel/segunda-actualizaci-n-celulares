@@ -290,12 +290,11 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
     height: 95dvh;
 }
 
-/* boton accesesrios */
+/* boton accesorios */
 .carrito-accesorios{
-    position: fixed;top: -105dvh;margin-left: 25dvw;border-radius: 25%;box-shadow: 2px 2px 0px rgb(66, 75, 88);
+    position: relative;top: -40dvh;margin-left: 55dvw;border-radius: 25px ;width: 100px;box-shadow: 2px 2px 0px rgb(66, 75, 88)
 }
-.carrito-accesorios:active{ transform: translateY(-2px);
-}
+.carrito-accesorios:active{ transform: translateY(-2px);}
 
 /* menu acordeon para accesorios */
 
@@ -327,7 +326,7 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
         transform: scale(1.5);
         opacity: 0.2;
         border: 2px solid transparent;
- 
+
     }
 
     .scroll-list__item.active {
@@ -336,7 +335,7 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
     }
 
 
-/* animacion para accesrios */
+/* animacion para accesorios */
 
 
 
@@ -558,7 +557,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     background-color: #41333c;
     transition: 2s;
 }
-.carrito-celularesmi8{ margin-left: 100px;border-radius: 20px;border: 2px solid #48e;color: #fff;background-color: #41333c;transition: 2s;}
+.carrito-celularesmi8{ position: relative;;margin-left: 100px;border-radius: 20px;border: 2px solid #48e;color: #fff;background-color: #41333c;transition: 2s;top:-30px;}
 .carrito-celulares:hover{
     scale: 1.1;
 }
@@ -581,7 +580,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .caracteristicas-mi8{ 
     height: 45px;
     position: relative;
-    top: -60px;    
+    top: -35px;    
     width: 110px;
     margin-left: 120px; 
     box-shadow:  2px 4px 3px #2e2b2d;
@@ -715,7 +714,21 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 /* footer */
 
+.footer{
+    position: absolute;
+    background-color: #06010f;
+    background-image: radial-gradient( 1px 1px at 25% 25%, white, rgba(0, 0, 0, 0) ), radial-gradient(1px 1px at 50% 50%, white, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 75% 75%, white, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 100% 100%, white, rgba(0, 0, 0, 0)); 
+    background-size: 200px 200px, 300px 300px, 400px 400px, 600px 600px; 
+    background-repeat: repeat; 
+    animation: twinkle 10s linear infinite; 
+    top: 245dvh;
+    width: 102dvw;
+    height: 100dvh;
+    border-radius: 20px 20px 0 0;
+    z-index: 99;
 
+
+}
 
 /* diseño responsive */
 
@@ -761,12 +774,12 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .card-inner { justify-content: flex-start;} 
 
-.card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 550px;width:970px;position: relative;}
+.card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 685px;width:970px;position: relative;}
 
 
-.foto-local{ top: 5dvh;display: flex;height: 450px;width: 970px;}
+.foto-local{ top: 5dvh;display: flex;height: 620px;width: 970px;}
 
-.box{ top: 18dvh;display: block;height: 590px;width:250px;}
+.box{ display: block;top: 205dvh;width: 980px;height: 100dvh;}
 
 .sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 350dvw;height: 85dvh;left: 5.7dvw; }
 
@@ -779,11 +792,11 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 320dvw;height: 75dvh;}
 
 
-.scroll-list__wrp{ width: 172dvw;top:130dvh;}
+.scroll-list__wrp{ height: 65dvh;width: 198dvw;top:130dvh;}
 
 
 
-.box{ top: 185dvh;width: 980px;}
+
 
 
 
@@ -792,8 +805,15 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 article li {top: -51dvw;left: 190dvw;}
 
+footer{
+    position: relative;
+    background-color: #010114;
+    top: 108dvh;
+    width: 269dvw;
+    height: 100dvh;
 
-
+}
+.sidebar:has(input[type="checkbox"]:checked)footer{width: 350dvw;}
 }
 @media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
   /* Estilos específicos para pantalla horizontal */
@@ -814,7 +834,8 @@ article li {top: -51dvw;left: 190dvw;}
 .card-content{ height: 100%;}
 .card-inner{ height:110%; top: -130px}
 
-.caracteristicas-mi8{ height: 45px;position: relative;top: -20px;    width: 110px;margin-left: 120px; box-shadow:  2px 4px 3px #2e2b2d;border-radius: 5px;background-color: #150824;color: #fff;}
+.caracteristicas-mi8{ height: 45px;position: relative;
+    top: -20px;    width: 110px;margin-left: 120px; box-shadow:  2px 4px 3px #2e2b2d;border-radius: 5px;background-color: #150824;color: #fff;}
 .carrito-celularesmi8{position: relative;top: -17px;
     margin-left: 100px;}
 
@@ -824,7 +845,7 @@ article li {top: -22dvw;left: 110dvw;}
 .sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:160dvh;width: 143dvw; height:120dvh;} 
 .sidebar:has(input[type="checkbox"]:checked) article li {left:110dvw ;top: -41dvh;}
     
-.card-ubicacion{ top: -1px;display: flex;left: -0px; height: 550px;width:165dvw;position: absolute;}
+.card-ubicacion{ top: -1px;display: block;left: -0px; height: 550px;width:165dvw;position: absolute;}
 
 .sidebar{height:280dvh}
 
