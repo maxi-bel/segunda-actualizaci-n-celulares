@@ -625,7 +625,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     justify-content: center;
     align-items: center;
     width: 102dvw;
-    height: 45dvw;
+    height: 60dvw;
     background: radial-gradient(#480d35, #17151d);
     position: absolute;
     top: 188dvh;
@@ -640,7 +640,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     /* left:-0dvw; */
     background: rgba(57, 56, 58, 0.788);
     width: 102dvw;
-    height: 41dvw;
+    height: 60dvw;
     opacity:1;
     border: 0.5px solid rgba(255, 255, 255, 0.15);
     border-radius: 25px;
@@ -652,10 +652,10 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 }
 
 .foto-local {
-    height: 47dvh;
+
     display: flex;
     width: 102dvw;
-    height: 38dvw;
+    height: 80dvh;
     margin-left: 0dvh;
     position: absolute;
     top: 25px;
@@ -674,7 +674,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     position: relative;
     display: inline-flex;
     text-wrap: wrap;
-    top: -190dvh;
+    top: -195dvh;
     font-size: 1.8rem;
     font-weight: 5;
     color: rgba(12, 6, 22, 0.92);
@@ -683,6 +683,8 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     animation: h2 5s linear alternate infinite;
     left: -14px;
     overflow-x:hidden ;
+    clip-path: polygon(0% 0%, 82% 0, 100% 50%, 83% 100%, 0% 100%);
+padding: 10%;
 }
 
 .button{
@@ -702,10 +704,10 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 
 @keyframes h2 {
-    from{
+    from{background-color: #444;
         opacity: 0;
     }
-    to{
+    to{ background-color: #d8d4d4;
         opacity: 1;
     }
 }
@@ -715,7 +717,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .footer{
     position: absolute;
     background-color: #06010f;
-    background-image: radial-gradient( 1px 1px at 25% 25%, white, rgba(0, 0, 0, 0) ), radial-gradient(1px 1px at 50% 50%, white, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 75% 75%, white, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 100% 100%, white, rgba(0, 0, 0, 0)); 
+    background-image: radial-gradient( 1px 1px at 25% 25%, rgb(107, 14, 228), rgba(0, 0, 0, 0) ), radial-gradient(3px 3px at 50% 50%, white, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 75% 75%, white, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 100% 100%, white, rgba(0, 0, 0, 0)); 
     background-size: 200px 200px, 300px 300px, 400px 400px, 600px 600px; 
     background-repeat: repeat; 
     animation: twinkle 10s linear infinite; 
@@ -757,7 +759,6 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 .caracteristicas-mi8{ height: 45px;position: relative;top: -20px;    width: 110px;margin-left: 120px; box-shadow:  2px 4px 3px #2e2b2d;border-radius: 5px;background-color: #150824;color: #fff;}
 
 
-.sidebar:has(input[type="checkbox"]:checked).scroll-list__wrp{top: -75dvh;}
 
 
 :root {--card-width: 250px; --card-height: 380px;--carousel-radius: 200px;justify-content:center ;}
@@ -772,12 +773,12 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .card-inner { justify-content: flex-start;} 
 
-.card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 685px;width:970px;position: relative;}
+.card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 100dvh;width:260dvw;position: relative;}
 
 
-.foto-local{ top: 5dvh;display: flex;height: 620px;width: 970px;}
+.foto-local{ top: 5dvh;display: flex;height: 92dvh;width: 257dvw;}
 
-.box{ display: block;top: 205dvh;width: 980px;height: 100dvh;}
+.box{ display: block;top: 205dvh;width: 260dvw;height: 100dvh;}
 
 .sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 350dvw;height: 85dvh;left: 5.7dvw; }
 
@@ -787,13 +788,16 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
 .sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 350dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:100dvh;width: 320dvw;height: 75dvh;}
 
-
-.scroll-list__wrp{ height: 65dvh;width: 198dvw;top:130dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:110dvh;width: 305dvw;height: 75dvh;}
 
 
 
+.scroll-list__wrp{ height: 65dvh;width: 192dvw;top:130dvh;}
+
+
+ .carrito-accesorios{ position: relative;top:-20dvh;left: 60dvw;}
+.sidebar:has(input[type="checkbox"]:checked) .carrito-accesorios{ position: relative;top:-20dvh;}
 
 
 
