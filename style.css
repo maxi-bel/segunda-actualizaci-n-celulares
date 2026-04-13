@@ -721,10 +721,10 @@ padding: 10%;
     background-size: 200px 200px, 300px 300px, 400px 400px, 600px 600px; 
     background-repeat: repeat; 
     animation: twinkle 10s linear infinite; 
-    top: 283dvh;
+    top: 313dvh;
     width: 102dvw;
     height: 155dvh;
-    border-radius: 20px 20px 0 0;
+    border-radius: 2px 2px 0 0;
     z-index: 99;
 
 
@@ -780,7 +780,7 @@ padding: 10%;
 
 .box{ display: block;top: 205dvh;width: 260dvw;height: 100dvh;}
 
-.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 350dvw;height: 85dvh;left: 5.7dvw; }
+.sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 450dvw;height: 85dvh;left: 5.7dvw; }
 
 .button{left: 100dvw;}    
 
@@ -808,14 +808,14 @@ padding: 10%;
 article li {top: -51dvw;left: 190dvw;}
 
 .footer{
-    position: relative;
-    background-color: #010114;
-    top: 108dvh;
-    width: 269dvw;
-    height: 100dvh;
+        position: relative;
+        background-color: #010114;
+        top: 110dvh;
+        width: 269dvw;
+        height: 173dvh;
 
 }
-.sidebar:has(input[type="checkbox"]:checked)footer{width: 350dvw;}
+.sidebar:has(input[type="checkbox"]:checked).footer{width: 350dvw;}
 }
 @media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
   /* Estilos específicos para pantalla horizontal */
