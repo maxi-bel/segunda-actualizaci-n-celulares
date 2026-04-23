@@ -809,7 +809,7 @@ padding: 10%;
  .carrito-accesorios{ position: relative;top:-20dvh;left: 60dvw;}
 .sidebar:has(input[type="checkbox"]:checked) .carrito-accesorios{ position: relative;top:-20dvh;}
 
-
+.flechas{margin-top: 130dvh;margin-left: -20dvw;}
 
 
 .elements-ubicacion h2{text-wrap: wrap;letter-spacing: 2mm;}
@@ -854,7 +854,10 @@ article li {top: -51dvw;left: 190dvw;}
 
 .scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;} 
 article li {top: -22dvw;left: 110dvw;}
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:160dvh;width: 143dvw; height:120dvh;} 
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:160dvh;width: 143dvw; height:120dvh;}
+.flechas{margin-top: 185dvh;margin-left: -10dvw;} 
+
+
 .sidebar:has(input[type="checkbox"]:checked) article li {left:110dvw ;top: -41dvh;}
     
 .card-ubicacion{ top: -1px;display: block;left: -0px; height: 550px;width:165dvw;position: absolute;}
@@ -878,7 +881,8 @@ article li {top: -22dvw;left: 110dvw;}
     background-color: #010114;
     top: 15dvh;
     width: 168dvw;
-    height: 133dvh;
+    height: 163dvh;
+    overflow-y: hidden;
 
 }
 }
