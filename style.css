@@ -48,7 +48,7 @@ body{
 
 
 
-
+h4{display: none;}
 /*  picture styles */
 
 .sidebar-picture{
@@ -746,6 +746,24 @@ padding: 10%;
   /* Estilos específicos para pantalla vertical */
 
 {
+    h4{
+        display: block;
+        margin-left: 20dvw;
+        letter-spacing: .1rem;
+        font-size: 1.5rem;
+        text-wrap: nowrap;
+        overflow: hidden;
+        animation: movimiento 5s infinite
+
+    }
+
+@keyframes movimiento {
+    0%{transform: translateX(0);}
+    50%{transform: translateX(-100dvw);}
+    100%{transform: translateX(100dvw);}
+    
+    
+}    
 #menu_compra{
     height: 130dvh;width: 743px;}
 
@@ -829,7 +847,14 @@ article li {top: -51dvw;left: 190dvw;}
 }
 @media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
   /* Estilos específicos para pantalla horizontal */
+    h4{
+        display: block;
+        left: 50dvw;
+        letter-spacing: .1rem;
+        font-size: 1.5rem;
+        animation: movimiento 5s infinite
 
+    }
 
 #menu_compra{ height: 220dvh;width: 980px;}
 
