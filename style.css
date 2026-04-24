@@ -724,7 +724,8 @@ padding: 10%;
 
 /* footer */
 
-.footer{
+.footer {
+    display: flex;
     position: absolute;
     background-color: #06010f;
     background-image: radial-gradient( 1px 1px at 25% 25%, rgb(107, 14, 228), rgba(0, 0, 0, 0) ), radial-gradient(3px 3px at 50% 50%, white, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 75% 75%, white, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 100% 100%, white, rgba(0, 0, 0, 0)); 
@@ -735,10 +736,74 @@ padding: 10%;
     width: 102dvw;
     height: 155dvh;
     border-radius: 2px 2px 0 0;
-    z-index: 99;
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
+
+.menu-footer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+.icon-elem{
+    list-style: none;
+}
+
+.icon{
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    margin:  0 10px;
+    transition: .5s;
+}
+.icon:hover{
+    transform:translateY(-10px) ;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.menu-elem{
+    list-style: none;
+}
+.menu-icon{
+    color: white;
+    font-size: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: .5;
+    transition: .3s;
+}
+.menu-icon:hover{
+    opacity: 1;
+}
+.text{
+    color: white;
+    text-align:right;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.9rem;
+}
+
+
 
 /* diseño responsive */
 
