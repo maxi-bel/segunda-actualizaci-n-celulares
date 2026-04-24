@@ -752,15 +752,15 @@ padding: 10%;
         letter-spacing: .1rem;
         font-size: 1.5rem;
         text-wrap: nowrap;
-        overflow: hidden;
-        animation: movimiento 5s infinite
+
+        animation: movimiento 8s infinite
 
     }
 
 @keyframes movimiento {
     0%{transform: translateX(0);}
     50%{transform: translateX(-100dvw);}
-    100%{transform: translateX(100dvw);}
+    100%{transform: translateX(135dvw);}
     
     
 }    
