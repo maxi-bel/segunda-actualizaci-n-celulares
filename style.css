@@ -809,11 +809,10 @@ padding: 10%;
 
 @media only screen and (min-width: 320px) and (max-width: 736px) and (orientation: portrait) 
   /* Estilos específicos para pantalla vertical */
-
 {
 
 
-.sidebar{scale: .35;top:-63dvh;left: -4.5dvw;}    
+.sidebar{scale: .35;top:-63dvh;left: -15.5dvw;}    
 #menu_compra{
     height: 130dvh;width: 738px;}
 
@@ -827,7 +826,7 @@ padding: 10%;
 .cosmos-background{
     margin: 1%;margin-bottom:13%;border-radius: 20px;
 }
-
+.sidebar:has(input[type="checkbox"]:checked){ left:-4dvw ;}
 .sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 100dvh;width: 830px;}
 
 .sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 100dvh;width: 830px;}
