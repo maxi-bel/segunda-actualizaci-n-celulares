@@ -811,30 +811,15 @@ padding: 10%;
   /* Estilos específicos para pantalla vertical */
 
 {
-    h4{
-        display: block;
-        margin-left: 20dvw;
-        letter-spacing: .1rem;
-        font-size: 1.5rem;
-        text-wrap: nowrap;
 
-        animation: movimiento 8s infinite
 
-    }
-
-@keyframes movimiento {
-    0%{transform: translateX(0);}
-    50%{transform: translateX(-100dvw);}
-    100%{transform: translateX(135dvw);}
-    
-    
-}    
+.sidebar{scale: .35;top:-63dvh;left: -4.5dvw;}    
 #menu_compra{
-    height: 130dvh;width: 743px;}
+    height: 130dvh;width: 738px;}
 
-#menu_compra::after{  height: 130dvh; width: 743px;}
+#menu_compra::after{  height: 130dvh; width: 738px;}
 
-#menu_compra::before{  height: 130dvh; width: 743px;}
+#menu_compra::before{  height: 130dvh; width: 738px;}
 
 .cosmos-background{
     margin: 1%;margin-bottom:13%;border-radius: 20px;}
@@ -854,7 +839,7 @@ padding: 10%;
 
 
 
-:root {--card-width: 250px; --card-height: 380px;--carousel-radius: 200px;justify-content:center ;}
+
 
 .carousel-container {height: 100px; justify-content:center;/* Altura reducida */}
 
@@ -866,12 +851,12 @@ padding: 10%;
 
 .card-inner { justify-content: flex-start;} 
 
-.card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 100dvh;width:260dvw;position: relative;}
+.card-ubicacion{ top: -1dvh;display: block;left: 5px; height: 100dvh;width:241dvw;position: relative;}
 
 
-.foto-local{ top: 5dvh;display: flex;height: 92dvh;width: 257dvw;}
+.foto-local{ top: 5dvh;display: flex;height: 92dvh;width: 241dvw;}
 
-.box{ display: block;top: 205dvh;width: 260dvw;height: 100dvh;}
+.box{ scale:.36 ;display: block;top: 39dvh;left:-75dvw;width: 240dvw;height: 100dvh;}
 
 .sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 450dvw;height: 85dvh;left: 5.7dvw; }
 
@@ -882,14 +867,14 @@ padding: 10%;
 .sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 350dvw;}
 
 
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:110dvh;width: 235dvw;height: 75dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:110dvh;width: 209dvw;height: 75dvh;}
 
 
 
-.scroll-list__wrp{ height: 65dvh;width: 192dvw;top:130dvh;}
+.scroll-list__wrp{ height: 65dvh;width: 185dvw;top:130dvh;}
 
 
- .carrito-accesorios{ position: relative;top:-20dvh;left: 60dvw;}
+.carrito-accesorios{ position: relative;top:-20dvh;left: 60dvw;}
 .sidebar:has(input[type="checkbox"]:checked) .carrito-accesorios{ position: relative;top:-20dvh;}
 
 .flechas{margin-top: 130dvh;margin-left: -20dvw;}
@@ -900,26 +885,18 @@ padding: 10%;
 
 article li {top: -51dvw;left: 190dvw;}
 
-.footer{
+.footer{scale:.35;
         position: relative;
         background-color: #010114;
-        top: 110dvh;
-        width: 269dvw;
+        top: -145dvh;
+        left:-85dvw;
+        width: 256dvw;
         height: 173dvh;
 
 }
-.sidebar:has(input[type="checkbox"]:checked).footer{width: 350dvw;}
 }
 @media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
   /* Estilos específicos para pantalla horizontal */
-    h4{
-        display: block;
-        left: 50dvw;
-        letter-spacing: .1rem;
-        font-size: 1.5rem;
-        animation: movimiento 5s infinite
-
-    }
 
 #menu_compra{ height: 220dvh;width: 980px;}
 
