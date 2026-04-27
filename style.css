@@ -1,7 +1,7 @@
 body, div, ul,a,h1,h2,h3,h4{
     margin: 0;
     padding: 0;
-
+    max-height: 95vh;
     font-family:  sans-serif;
 }
 
@@ -301,10 +301,10 @@ input[type="checkbox"]:checked~ ::after,input[type="checkbox"]:checked~ ::before
     .scroll-list__wrp {
     
         position: absolute;
-        top: 105dvh;
+        top: 115dvh;
         margin-left: 60px;
         width: 80.9dvw;
-        height: 58dvh;
+        height: 68dvh;
         overflow-y: scroll;
         border-radius: 36px;
         box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
@@ -640,7 +640,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
     height: 60dvw;
     background: radial-gradient(#480d35, #17151d);
     position: absolute;
-    top: 188dvh;
+    top: 200dvh;
     /* left:-17dvw; */
     border-radius: 20px;
     z-index: 1;
@@ -667,7 +667,7 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 
     display: flex;
     width: 102dvw;
-    height: 80dvh;
+    height: 90dvh;
     margin-left: 0dvh;
     position: absolute;
     top: 25px;
@@ -812,7 +812,7 @@ padding: 10%;
 {
 body {
     margin: 0;
-    height: 100 10
+    height: 100dvh;
 }
 
 .sidebar{scale: .35;top:-63dvh;left: -15.5dvw;}    
@@ -873,7 +873,7 @@ body {
 
 
 
-.scroll-list__wrp{ height: 65dvh;width: 205dvw;top:130dvh;}
+.scroll-list__wrp{ height: 65dvh;width: 205dvw;top:115dvh;}
 
 
 .carrito-accesorios{ position: relative;top:-20dvh;left: 60dvw;}
@@ -890,7 +890,7 @@ article li {top: -51dvw;left: 190dvw;}
 .footer{scale:.4;
         position: relative;
         background-color: #010114;
-        top: -140dvh;
+        top: -148dvh;
         left:-85dvw;
         width: 265dvw;
         height: 193dvh;
