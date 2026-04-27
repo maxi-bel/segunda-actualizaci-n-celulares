@@ -810,15 +810,18 @@ padding: 10%;
 @media only screen and (min-width: 320px) and (max-width: 736px) and (orientation: portrait) 
   /* Estilos específicos para pantalla vertical */
 {
-
+body {
+    margin: 0;
+    height: 100 10
+}
 
 .sidebar{scale: .35;top:-63dvh;left: -15.5dvw;}    
 #menu_compra{
-    height: 130dvh;width: 738px;}
+    height: 130dvh;width: 850px;}
 
-#menu_compra::after{  height: 130dvh; width: 738px;}
+#menu_compra::after{  height: 130dvh; width: 850px;}
 
-#menu_compra::before{  height: 130dvh; width: 738px;}
+#menu_compra::before{  height: 130dvh; width: 850px;}
 
 .cosmos-background{
     margin: 1%;margin-bottom:13%;border-radius: 20px;}
@@ -827,11 +830,11 @@ padding: 10%;
     margin: 1%;margin-bottom:13%;border-radius: 20px;
 }
 .sidebar:has(input[type="checkbox"]:checked){ left:-4dvw ;}
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 100dvh;width: 830px;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 100dvh;width: 230dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 100dvh;width: 830px;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 100dvh;width: 230dvw;}
 
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 100dvh;width: 830px;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 100dvh;width: 230dvw;}
 .carrito-celularesmi8{position: relative; top:-17px;}
 .caracteristicas-mi8{ height: 45px;position: relative;top: -20px;    width: 110px;margin-left: 120px; box-shadow:  2px 4px 3px #2e2b2d;border-radius: 5px;background-color: #150824;color: #fff;}
 
@@ -855,7 +858,7 @@ padding: 10%;
 
 .foto-local{ top: 5dvh;display: flex;height: 92dvh;width: 241dvw;}
 
-.box{ scale:.36 ;display: block;top: 39dvh;left:-75dvw;width: 240dvw;height: 100dvh;}
+.box{ scale:.42 ;display: block;top: 39dvh;left:-75dvw;width: 247dvw;height: 100dvh;}
 
 .sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 450dvw;height: 85dvh;left: 5.7dvw; }
 
@@ -866,11 +869,11 @@ padding: 10%;
 .sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{height: 85dvh; width: 350dvw;}
 
 
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:110dvh;width: 209dvw;height: 75dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  {top:110dvh;width: 232dvw;height: 75dvh;}
 
 
 
-.scroll-list__wrp{ height: 65dvh;width: 185dvw;top:130dvh;}
+.scroll-list__wrp{ height: 65dvh;width: 205dvw;top:130dvh;}
 
 
 .carrito-accesorios{ position: relative;top:-20dvh;left: 60dvw;}
@@ -884,71 +887,13 @@ padding: 10%;
 
 article li {top: -51dvw;left: 190dvw;}
 
-.footer{scale:.35;
+.footer{scale:.4;
         position: relative;
         background-color: #010114;
-        top: -145dvh;
+        top: -140dvh;
         left:-85dvw;
-        width: 256dvw;
-        height: 173dvh;
-
-}
-}
-@media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
-  /* Estilos específicos para pantalla horizontal */
-
-#menu_compra{ height: 220dvh;width: 980px;}
-
-#menu_compra::after{  height: 220dvh; width: 980px;}
-
-#menu_compra::before{  height: 220dvh; width: 980px;}
-
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 145dvh;width: 1050px;}
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 145dvh;width: 1190px;}
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 145dvh;width: 1190px;}
-
-.sidebar:has(input[type="checkbox"]:checked) .card-inner{height:100%;}
-
-.card-content{ height: 100%;}
-.card-inner{ height:110%; top: -130px}
-
-.caracteristicas-mi8{ height: 45px;position: relative;
-    top: -20px;    width: 110px;margin-left: 120px; box-shadow:  2px 4px 3px #2e2b2d;border-radius: 5px;background-color: #150824;color: #fff;}
-.carrito-celularesmi8{position: relative;top: -17px;
-    margin-left: 100px;}
-
-
-.scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;} 
-article li {top: -22dvw;left: 110dvw;}
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:160dvh;width: 143dvw; height:120dvh;}
-.flechas{margin-top: 185dvh;margin-left: -10dvw;} 
-
-
-.sidebar:has(input[type="checkbox"]:checked) article li {left:110dvw ;top: -41dvh;}
-    
-.card-ubicacion{ top: -1px;display: block;left: -0px; height: 550px;width:165dvw;position: absolute;}
-
-.sidebar{height:280dvh}
-
-.foto-local{ position: relative; top: 30px;height: 450px;width: 3500dvw;}
-
-.box{position:relative; top:40px; height: 550px;width:165dvw;}
-
-.sidebar:has(input[type="checkbox"]:checked) .box { position:relative;top:550px;width: 160dvw;height: 150dvh;left: 1.7dvw; }
-
-.button{left: 60dvw;}    
-
-.sidebar:has(input[type="checkbox"]:checked) .foto-local{ position:relative;height:155dvh;margin-top: 1%; width: 193dvw;}
-
-.sidebar:has(input[type="checkbox"]:checked) .card-ubicacion{position:absolute;height: 155dvh; width: 160dvw;top:0px;}
-
-.footer{
-    position: relative;
-    background-color: #010114;
-    top: 15dvh;
-    width: 168dvw;
-    height: 163dvh;
-    overflow-y: hidden;
+        width: 265dvw;
+        height: 193dvh;
 
 }
 }
