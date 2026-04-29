@@ -897,24 +897,26 @@ article li {top: -51dvw;left: 190dvw;}
 
 }
 }
+
 @media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
   /* Estilos específicos para pantalla horizontal */
 
 body{max-height:80vh;}
-#menu_compra{ height: 420dvh;width: 980px;}
+#menu_compra{ height: 180dvh;width: 980px;max-height:none;}
+.cosmos-background{z-index:-1;height: fit-content;}
 
-#menu_compra::after{  height: 420dvh; width: 980px;}
+#menu_compra::after{  height: 180dvh; width: 980px;max-height:none;}
 
-#menu_compra::before{  height: 420dvh; width: 980px;}
+#menu_compra::before{  height: 180dvh; width: 980px;max-height:none;}
 
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 1245px;width: 1050px;}
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 1245dvh;width: 1190px;}
-.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height: 1245dvh;width: 1190px;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 150dvh;width: 1050px;max-height:none;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::after{height: 150dvh;width: 1190px;max-height:none;}
+.sidebar:has(input[type="checkbox"]:checked) #menu_compra::before{height:150dvh;width: 1190px;max-height:none}
 
 .sidebar:has(input[type="checkbox"]:checked) .card-inner{height:100dvh;top: 20dvh;}
 
 .card-content{ height: 100%;}
-.card-inner{ height:310%; top: 50dvh}
+.card-inner{ height:500px; top: 10dvh; max-height:none}
 
 .caracteristicas-mi8{ height: 45px;position: relative;
     top: -20px;    width: 110px;margin-left: 120px; box-shadow:  2px 4px 3px #2e2b2d;border-radius: 5px;background-color: #150824;color: #fff;}
@@ -922,9 +924,9 @@ body{max-height:80vh;}
     margin-left: 100px;}
 
 
-.scroll-list__wrp{ height:60dvh; width: 132dvw;top:225dvh;} 
+.scroll-list__wrp{ height:80dvh; width: 132dvw;top:200dvh;} 
 article li {top: -22dvw;left: 110dvw;}
-.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:160dvh;width: 143dvw; height:120dvh;}
+.sidebar:has(input[type="checkbox"]:checked) .scroll-list__wrp  { top:170dvh;width: 143dvw; height:140dvh;}
 .flechas{margin-top: 185dvh;margin-left: -10dvw;} 
 
 
@@ -948,7 +950,7 @@ article li {top: -22dvw;left: 110dvw;}
     top: 450dvh;
     width: 168dvw;
     height: 163dvh;
-  
+
 
 }
 }
