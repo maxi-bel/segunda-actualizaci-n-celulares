@@ -1,4 +1,4 @@
-body, div, ul,a,h1,h2,h3,h4{
+body, div, ul,a,h1,h2,h3{
     margin: 0;
     padding: 0;
     max-height: 95vh;
@@ -48,7 +48,6 @@ body{
 
 
 
-h4{display: none;}
 /*  picture styles */
 
 .sidebar-picture{
@@ -815,20 +814,17 @@ body {
     height: 100dvh;
 }
 
-.sidebar{scale: .35;top:-63dvh;left: -20dvw;}    
-#menu_compra{
-    height: 130dvh;width: 850px;}
+.sidebar{scale: .35;top:-65dvh;left: -20dvw;width:57dvw ;}    
+#menu_compra{max-height:none ;height: 110dvh;width: 800px;left:10dvw}
 
 #menu_compra::after{  height: 130dvh; width: 850px;}
 
 #menu_compra::before{  height: 130dvh; width: 850px;}
 
 .cosmos-background{
-    margin: 1%;margin-bottom:13%;border-radius: 20px;}
+    margin: 1%;margin-bottom:3%;border-radius: 20px;height:20px}
 
-.cosmos-background{
-    margin: 1%;margin-bottom:13%;border-radius: 20px;
-}
+
 .sidebar:has(input[type="checkbox"]:checked){ left:-6.5dvw ;}
 .sidebar:has(input[type="checkbox"]:checked) #menu_compra{height: 100dvh;width: 230dvw;}
 
