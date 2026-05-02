@@ -8,8 +8,10 @@ body, div, ul,a,h1,h2,h3{
 label, .sidebar-nav{
     user-select: none;
 }
-body{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+body{    
+    margin: 0;
+    height: 100dvh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     --bg-color: rgb(57, 39, 134);
     --sidebar-color: #fff;
     --dark-color:rgb(57, 39, 134);
@@ -698,18 +700,25 @@ li{ font-size: .7rem; margin-bottom: 15px; color: var(--text-primary); text-shad
 padding: 10%;
 }
 
-.button{
+#button{
+    left: 40dvw;
     font-size: 2rem;
     letter-spacing: 1mm;
-    border-radius: 40px;
+    border-radius: 20px;
     display: inline;
     position:absolute ;
-    color: #201f21;
     text-wrap: wrap;
     top: -170dvh;
-    box-shadow: 2px 0px 5px #91909c;
+    box-shadow: 2px 0px 20px #19107e;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    z-index: 99;
+    background-color: #cfc9d3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+#button:hover{ 
+    border:none;
+    box-shadow: none;}
 
 
 @keyframes h2 {
@@ -858,7 +867,7 @@ body {
 
 .sidebar:has(input[type="checkbox"]:checked) .box { top: 155dvh;width: 450dvw;height: 85dvh;left: 5.7dvw; }
 
-.button{left: 100dvw;}    
+#button{left: 100dvw;}    
 
 .sidebar:has(input[type="checkbox"]:checked) .foto-local{ height:85dvh;margin-top: 2%; width: 350dvw;}
 
@@ -937,7 +946,7 @@ article li {top: -22dvw;left: 110dvw;}
 .box{position:relative; top:40px; height: 550px;width:165dvw;}
 
 
-.button{left: 60dvw;}    
+#button{left: 60dvw;}    
 
 
 .footer{
